@@ -1,0 +1,1966 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0074)http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=812508 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="Head1"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/auth016.js"></script><link rel="stylesheet" type="text/css" href="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/widget119.css" media="all"><title>
+	SPIE | Proceeding | Watch global, cache local: YouTube network traffic at a campus network: measurements and implications
+</title><meta name="viewport" content="width=device-width, maximum-scale=1.0"><link rel="shortcut icon" href="http://proceedings.spiedigitallibrary.org/favicon.ico" type="image/png"><link rel="icon" href="http://proceedings.spiedigitallibrary.org/favicon.ico" type="image/png">
+    <link rel="stylesheet" type="text/css" href="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/saved_resource">
+    
+    
+    <link rel="stylesheet" type="text/css" href="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/saved_resource(1)">
+    <meta name="citation_author" content="Michael Zink"><meta name="citation_author_institution" content="Univ. of Massachusetts/Amherst"><meta name="citation_author" content="Kyoungwon Suh"><meta name="citation_author_institution" content="Illinois State Univ."><meta name="citation_author" content="Yu Gu"><meta name="citation_author_institution" content="Univ. of Massachusetts/Amherst"><meta name="citation_author" content="Jim Kurose"><meta name="citation_author_institution" content="Univ. of Massachusetts/Amherst"><meta name="citation_title" content="Watch global, cache local: YouTube network traffic at a campus network: measurements and implications"><meta name="citation_firstpage" content="681805"><meta name="citation_lastpage" content="681805-13"><meta name="citation_doi" content="10.1117/12.774903"><meta name="citation_keyword" content="Networks"><meta name="citation_keyword" content="Simulations"><meta name="citation_keyword" content="Video"><meta name="citation_keyword" content="Web services"><meta name="citation_conference_title" content="Electronic Imaging 2008"><meta name="citation_publication_date" content="2008/01/27"><meta name="citation_publisher" content="International Society for Optics and Photonics"><meta name="citation_pdf_url" content="http://proceedings.spiedigitallibrary.org/data/Conferences/SPIEP/17576/681805_1.pdf">
+
+    
+    <script type="text/javascript" async="" src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/ga.js"></script><script type="text/javascript" src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/jquery.min.js"></script>
+    <script type="text/javascript">        window.jQuery || document.write('<script type="text/javascript" src="/JS/plugins/jquery-1.6.4.min.js"><\/script>')</script>
+	
+	<script type="text/javascript">
+		document.createElement('header');
+		document.createElement('hgroup');
+		document.createElement('nav');
+		document.createElement('menu');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+	</script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#globalHeader_divUmbrellaNavigationBar > ul > li").eq(2).hover(
+  function () {
+      var $element1 = $('#dvsliderright');
+      var $element2 = $('#dvsliderleft');
+      $element1.hide();
+      $element1.hide();
+  });
+
+            $("#globalHeader_divUmbrellaNavigationBar > ul > li").eq(2).mouseleave(
+  function () {
+      var $element1 = $('#dvsliderright');
+      var $element2 = $('#dvsliderleft');
+
+      if ($("#dvsliderleft:visible").length) {
+          $element2.show();
+          $element1.hide();
+      } else {
+          $element1.show();
+      }
+
+  });
+
+        });
+    </script>
+    
+        
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-32476078-1']);
+            _gaq.push(['_setSiteSpeedSampleRate', '5']);
+            _gaq.push(['_setDomainName', 'spiedigitallibrary.org']);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+    <meta name="WT.ti" content="DL:_Conference_Proceedings:_Article">
+<meta name="WT.cg_n" content="MainDrillDown:Digital_Library;ProductTypeDrillDown:Digital_Library;;;">
+<meta name="WT.cg_s" content="Main:Read_Content;Product:Conference_Proceedings;;;">
+<meta name="DCSext.auth" content="False">
+<meta name="DCSext.mobilesite" content="No">
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Hover_Arrow {position: absolute; width: 15px; height: 11px; cursor: pointer}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; color: #666666}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_Menu_Close {position: absolute; width: 31px; height: 31px; top: -15px; left: -15px}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style></head>
+<body class="SCM6 proceeding"><div id="MathJax_Message" style="display: none;"></div>
+    <div class="mobileDetection">
+    </div>
+    <span id="authenticationDetection" class="authenticationDetection">0</span>
+    <form method="post" action="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications.html" onsubmit="javascript:return WebForm_OnSubmit();" id="Form1">
+<div class="aspNetHidden">
+<input type="hidden" name="scm6ScriptManager_HiddenField" id="scm6ScriptManager_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUINDc5MDYwOTAPZBYCZg9kFgZmD2QWBAIFD2QWAmYPFgIeBFRleHQF9go8bWV0YSBuYW1lPSJjaXRhdGlvbl9hdXRob3IiIGNvbnRlbnQ9Ik1pY2hhZWwgWmluayIgLz48bWV0YSBuYW1lPSJjaXRhdGlvbl9hdXRob3JfaW5zdGl0dXRpb24iIGNvbnRlbnQ9IlVuaXYuIG9mIE1hc3NhY2h1c2V0dHMvQW1oZXJzdCIgLz48bWV0YSBuYW1lPSJjaXRhdGlvbl9hdXRob3IiIGNvbnRlbnQ9Ikt5b3VuZ3dvbiBTdWgiIC8+PG1ldGEgbmFtZT0iY2l0YXRpb25fYXV0aG9yX2luc3RpdHV0aW9uIiBjb250ZW50PSJJbGxpbm9pcyBTdGF0ZSBVbml2LiIgLz48bWV0YSBuYW1lPSJjaXRhdGlvbl9hdXRob3IiIGNvbnRlbnQ9Ill1IEd1IiAvPjxtZXRhIG5hbWU9ImNpdGF0aW9uX2F1dGhvcl9pbnN0aXR1dGlvbiIgY29udGVudD0iVW5pdi4gb2YgTWFzc2FjaHVzZXR0cy9BbWhlcnN0IiAvPjxtZXRhIG5hbWU9ImNpdGF0aW9uX2F1dGhvciIgY29udGVudD0iSmltIEt1cm9zZSIgLz48bWV0YSBuYW1lPSJjaXRhdGlvbl9hdXRob3JfaW5zdGl0dXRpb24iIGNvbnRlbnQ9IlVuaXYuIG9mIE1hc3NhY2h1c2V0dHMvQW1oZXJzdCIgLz48bWV0YSBuYW1lPSJjaXRhdGlvbl90aXRsZSIgY29udGVudD0iV2F0Y2ggZ2xvYmFsLCBjYWNoZSBsb2NhbDogWW91VHViZSBuZXR3b3JrIHRyYWZmaWMgYXQgYSBjYW1wdXMgbmV0d29yazogbWVhc3VyZW1lbnRzIGFuZCBpbXBsaWNhdGlvbnMiIC8+PG1ldGEgbmFtZT0iY2l0YXRpb25fZmlyc3RwYWdlIiBjb250ZW50PSI2ODE4MDUiIC8+PG1ldGEgbmFtZT0iY2l0YXRpb25fbGFzdHBhZ2UiIGNvbnRlbnQ9IjY4MTgwNS0xMyIgLz48bWV0YSBuYW1lPSJjaXRhdGlvbl9kb2kiIGNvbnRlbnQ9IjEwLjExMTcvMTIuNzc0OTAzIiAvPjxtZXRhIG5hbWU9ImNpdGF0aW9uX2tleXdvcmQiIGNvbnRlbnQ9Ik5ldHdvcmtzIiAvPjxtZXRhIG5hbWU9ImNpdGF0aW9uX2tleXdvcmQiIGNvbnRlbnQ9IlNpbXVsYXRpb25zIiAvPjxtZXRhIG5hbWU9ImNpdGF0aW9uX2tleXdvcmQiIGNvbnRlbnQ9IlZpZGVvIiAvPjxtZXRhIG5hbWU9ImNpdGF0aW9uX2tleXdvcmQiIGNvbnRlbnQ9IldlYiBzZXJ2aWNlcyIgLz48bWV0YSBuYW1lPSJjaXRhdGlvbl9jb25mZXJlbmNlX3RpdGxlIiBjb250ZW50PSJFbGVjdHJvbmljIEltYWdpbmcgMjAwOCIgLz48bWV0YSBuYW1lPSJjaXRhdGlvbl9wdWJsaWNhdGlvbl9kYXRlIiBjb250ZW50PSIyMDA4LzAxLzI3IiAvPjxtZXRhIG5hbWU9ImNpdGF0aW9uX3B1Ymxpc2hlciIgY29udGVudD0iSW50ZXJuYXRpb25hbCBTb2NpZXR5IGZvciBPcHRpY3MgYW5kIFBob3RvbmljcyIgLz48bWV0YSBuYW1lPSJjaXRhdGlvbl9wZGZfdXJsIiBjb250ZW50PSJodHRwOi8vcHJvY2VlZGluZ3Muc3BpZWRpZ2l0YWxsaWJyYXJ5Lm9yZy9kYXRhL0NvbmZlcmVuY2VzL1NQSUVQLzE3NTc2LzY4MTgwNV8xLnBkZiIgLz5kAggPFgIfAAXiAjxtZXRhIG5hbWU9IldULnRpIiBjb250ZW50PSJETDpfQ29uZmVyZW5jZV9Qcm9jZWVkaW5nczpfQXJ0aWNsZSIgLz4NCjxtZXRhIG5hbWU9IldULmNnX24iIGNvbnRlbnQ9Ik1haW5EcmlsbERvd246RGlnaXRhbF9MaWJyYXJ5O1Byb2R1Y3RUeXBlRHJpbGxEb3duOkRpZ2l0YWxfTGlicmFyeTs7OyIgLz4NCjxtZXRhIG5hbWU9IldULmNnX3MiIGNvbnRlbnQ9Ik1haW46UmVhZF9Db250ZW50O1Byb2R1Y3Q6Q29uZmVyZW5jZV9Qcm9jZWVkaW5nczs7OyIgLz4NCjxtZXRhIG5hbWU9IkRDU2V4dC5hdXRoIiBjb250ZW50PSJGYWxzZSIgLz4NCjxtZXRhIG5hbWU9IkRDU2V4dC5tb2JpbGVzaXRlIiBjb250ZW50PSJObyIgLz4NCmQCAQ8PFgIfAAUBMGRkAgIPZBYIAgMPZBYIAgEPFgIeB1Zpc2libGVoZAIDDxYCHwFoFgYCAQ8PFgIeB1Rvb2xUaXBlZGQCAw9kFgICAw8WAh4EaHJlZgWYAWh0dHBzOi8vc3BpZS5vcmcvYXBwL2FjY291bnRtYW5hZ2VyL2NyZWF0ZS9hY2NvdW50aW5mb3JtYXRpb24uYXNweD9SZXR1cm5VUkw9aHR0cHMlM2ElMmYlMmZzcGllZGlnaXRhbGxpYnJhcnkub3JnJTJmcHJvY2VlZGluZy5hc3B4JTNmYXJ0aWNsZWlkJTNkODEyNTA4ZAIJDxYCHwMFLWh0dHA6Ly9zcGllZGlnaXRhbGxpYnJhcnkub3JnL3N0b3JlL0hvbWUuYXNweGQCBQ9kFgJmDxYCHwMFOi9zaWduaW4uYXNweD9SZWRpcmVjdFVSTD0vcHJvY2VlZGluZy5hc3B4P2FydGljbGVpZD04MTI1MDhkAgcPZBYIZg8WAh8BaBYCZg8QZGQWAGQCAQ9kFgJmD2QWBAIBDxAPFgIfAWhkZBYAZAIDDxYCHwMFGS9Tb2xyL2FkdmFuY2VkU2VhcmNoLmFzcHhkAgIPZBYCAgEPFgQeCWlubmVyaHRtbAWqDjx1bCBjbGFzcz0ibmF2Ij48bGkgPjxhIGhyZWY9Imh0dHA6Ly9zcGllZGlnaXRhbGxpYnJhcnkub3JnL2luZGV4LmFzcHgiPkhPTUU8L2E+PC9saT4NCjxsaSA+PGEgaHJlZj0iaHR0cDovL3Byb2NlZWRpbmdzLnNwaWVkaWdpdGFsbGlicmFyeS5vcmcvY29uZmVyZW5jZXByb2NlZWRpbmdzLmFzcHgiPlBST0NFRURJTkdTPC9hPjwvbGk+DQo8bGkgPjxhIGhyZWY9Imh0dHA6Ly9qb3VybmFscy5zcGllZGlnaXRhbGxpYnJhcnkub3JnL2pvdXJuYWxzLmFzcHgiPkpPVVJOQUxTPC9hPjx1bCBpZD0iZ2xvYmFsTmF2X0pPVVJOQUxTIiBjbGFzcz0ic3ViTmF2Ij48bGk+PGEgaHJlZj0iaHR0cDovL29wdGljYWxlbmdpbmVlcmluZy5zcGllZGlnaXRhbGxpYnJhcnkub3JnL2pvdXJuYWwuYXNweD9qb3VybmFsaWQ9OTIiPk9wdGljYWwgRW5naW5lZXJpbmc8L2E+PC9saT48bGk+PGEgaHJlZj0iaHR0cDovL2Jpb21lZGljYWxvcHRpY3Muc3BpZWRpZ2l0YWxsaWJyYXJ5Lm9yZy9qb3VybmFsLmFzcHg/am91cm5hbGlkPTkzIj5Kb3VybmFsIG9mIEJpb21lZGljYWwgT3B0aWNzPC9hPjwvbGk+PGxpPjxhIGhyZWY9Imh0dHA6Ly9lbGVjdHJvbmljaW1hZ2luZy5zcGllZGlnaXRhbGxpYnJhcnkub3JnL2pvdXJuYWwuYXNweD9qb3VybmFsaWQ9OTQiPkpvdXJuYWwgb2YgRWxlY3Ryb25pYyBJbWFnaW5nPC9hPjwvbGk+PGxpPjxhIGhyZWY9Imh0dHA6Ly9uYW5vbGl0aG9ncmFwaHkuc3BpZWRpZ2l0YWxsaWJyYXJ5Lm9yZy9qb3VybmFsLmFzcHg/am91cm5hbGlkPTk1Ij5Kb3VybmFsIG9mIE1pY3JvL05hbm9saXRob2dyYXBoeSwgTUVNUywgYW5kIE1PRU1TPC9hPjwvbGk+PGxpPjxhIGhyZWY9Imh0dHA6Ly9yZW1vdGVzZW5zaW5nLnNwaWVkaWdpdGFsbGlicmFyeS5vcmcvam91cm5hbC5hc3B4P2pvdXJuYWxpZD05NiI+Sm91cm5hbCBvZiBBcHBsaWVkIFJlbW90ZSBTZW5zaW5nPC9hPjwvbGk+PGxpPjxhIGhyZWY9Imh0dHA6Ly9uYW5vcGhvdG9uaWNzLnNwaWVkaWdpdGFsbGlicmFyeS5vcmcvam91cm5hbC5hc3B4P2pvdXJuYWxpZD05NyI+Sm91cm5hbCBvZiBOYW5vcGhvdG9uaWNzPC9hPjwvbGk+PGxpPjxhIGhyZWY9Imh0dHA6Ly9waG90b25pY3Nmb3JlbmVyZ3kuc3BpZWRpZ2l0YWxsaWJyYXJ5Lm9yZy9qb3VybmFsLmFzcHg/am91cm5hbGlkPTk4Ij5Kb3VybmFsIG9mIFBob3RvbmljcyBmb3IgRW5lcmd5PC9hPjwvbGk+PGxpPjxhIGhyZWY9Imh0dHA6Ly9tZWRpY2FsaW1hZ2luZy5zcGllZGlnaXRhbGxpYnJhcnkub3JnL2pvdXJuYWwuYXNweD9qb3VybmFsaWQ9MTY1Ij5Kb3VybmFsIG9mIE1lZGljYWwgSW1hZ2luZzwvYT48L2xpPjxsaT48YSBocmVmPSJodHRwOi8vYXN0cm9ub21pY2FsdGVsZXNjb3Blcy5zcGllZGlnaXRhbGxpYnJhcnkub3JnL2pvdXJuYWwuYXNweD9qb3VybmFsaWQ9MTY2Ij5Kb3VybmFsIG9mIEFzdHJvbm9taWNhbCBUZWxlc2NvcGVzLCBJbnN0cnVtZW50cywgYW5kIFN5c3RlbXM8L2E+PC9saT48bGk+PGEgaHJlZj0iaHR0cDovL3Jldmlld3Muc3BpZWRpZ2l0YWxsaWJyYXJ5Lm9yZy9qb3VybmFsLmFzcHgiPlNQSUUgUmV2aWV3czwvYT48L2xpPjwvdWw+PGxpID48YSBocmVmPSJodHRwOi8vZWJvb2tzLnNwaWVkaWdpdGFsbGlicmFyeS5vcmcvYm9va3MuYXNweCI+ZUJPT0tTPC9hPjwvbGk+DQo8bGkgPjxhIGhyZWY9Imh0dHA6Ly9zcGllZGlnaXRhbGxpYnJhcnkub3JnL2NvbGxlY3Rpb25zLmFzcHgiPlRPUElDIENPTExFQ1RJT05TPC9hPjwvbGk+DQo8bGkgPjxhIGhyZWY9Imh0dHA6Ly9zcGllZGlnaXRhbGxpYnJhcnkub3JnL3NzL2xpYnJhcmlhbnMuYXNweCI+TElCUkFSSUFOUzwvYT48L2xpPg0KPC91bD4fAWdkAgMPFgIfBAXHAzx1bD48bGkgPjxhIGhyZWY9Ii9Db25mZXJlbmNlUHJvY2VlZGluZ3MuYXNweCI+UHJvY2VlZGluZ3MgSG9tZTwvYT48L2xpPg0KPGxpID48YSBocmVmPSIvUHJvY2VlZGluZ0Jyb3dzZS5hc3B4Ij5Ccm93c2UgUHJvY2VlZGluZ3MgPjwvYT48L2xpPg0KPGxpID48YSBocmVmPSIvUHJvY2VlZGluZ0Jyb3dzZS5hc3B4I0NvbmZlcmVuY2UiPmJ5IENvbmZlcmVuY2U8L2E+PC9saT4NCjxsaSA+PGEgaHJlZj0iL1Byb2NlZWRpbmdCcm93c2UuYXNweCNZZWFyIj5CeSBZZWFyPC9hPjwvbGk+DQo8bGkgPjxhIGhyZWY9Ii9Qcm9jZWVkaW5nQnJvd3NlLmFzcHgjVm9sdW1lTm8iPmJ5IFZvbHVtZSBOby48L2E+PC9saT4NCjxsaSA+PGEgaHJlZj0iL1Byb2NlZWRpbmdCcm93c2UuYXNweCNWb2x1bWVUaXRsZSI+YnkgVm9sdW1lIFRpdGxlPC9hPjwvbGk+DQo8bGkgY2xhc3M9ImNsZWFyQWxsIj48L2xpPjwvdWw+ZAIFD2QWOAILDw8WBB8ABTJTUElFIFByb2NlZWRpbmdzIHwgVm9sdW1lIDY4MTggfCBFbXBpcmljYWwgU3R1ZGllcx4LTmF2aWdhdGVVcmwFK3ZvbHVtZS5hc3B4P2NvbmZlcmVuY2VpZD0xMTkyJnZvbHVtZWlkPTE4NzBkZAINDw8WAh8FBSEvcHJvY2VlZGluZy5hc3B4P2FydGljbGVpZD04MTI1MDVkZAIODw8WAh8FBSEvcHJvY2VlZGluZy5hc3B4P2FydGljbGVpZD04MTI1MTFkZAIQDxYCHwFnZAISDw8WAh8ABRNQcm9jZWVkaW5ncyBBcnRpY2xlZGQCGA8PFgIfAAVlV2F0Y2ggZ2xvYmFsLCBjYWNoZSBsb2NhbDogWW91VHViZSBuZXR3b3JrIHRyYWZmaWMgYXQgYSBjYW1wdXMgbmV0d29yazogbWVhc3VyZW1lbnRzIGFuZCBpbXBsaWNhdGlvbnNkZAIcDxYCHwFnFgICAQ8PFgIfAAWTBSA8YSBzdHlsZT0iY29sb3I6ICMwMEFBQjIiIGhyZWY9Imh0dHA6Ly9wcm9maWxlcy5zcGllZGlnaXRhbGxpYnJhcnkub3JnL3N1bW1hcnkuYXNweD9ET0k9MTAuMTExNyUyZjEyLjc3NDkwMyZOYW1lPU1pY2hhZWwrWmluayI+TWljaGFlbCBaaW5rPC9hPiA8YSBzdHlsZT0iY29sb3I6ICMwMEFBQjIiIGhyZWY9Imh0dHA6Ly9wcm9maWxlcy5zcGllZGlnaXRhbGxpYnJhcnkub3JnL3N1bW1hcnkuYXNweD9ET0k9MTAuMTExNyUyZjEyLjc3NDkwMyZOYW1lPUt5b3VuZ3dvbitTdWgiPjxzcGFuIGNsYXNzPSdzZXBhcmF0b3InPjs8L3NwYW4+IEt5b3VuZ3dvbiBTdWg8L2E+IDxhIHN0eWxlPSJjb2xvcjogIzAwQUFCMiIgaHJlZj0iaHR0cDovL3Byb2ZpbGVzLnNwaWVkaWdpdGFsbGlicmFyeS5vcmcvc3VtbWFyeS5hc3B4P0RPST0xMC4xMTE3JTJmMTIuNzc0OTAzJk5hbWU9WXUrR3UiPjxzcGFuIGNsYXNzPSdzZXBhcmF0b3InPjs8L3NwYW4+IFl1IEd1PC9hPiA8YSBzdHlsZT0iY29sb3I6ICMwMEFBQjIiIGhyZWY9Imh0dHA6Ly9wcm9maWxlcy5zcGllZGlnaXRhbGxpYnJhcnkub3JnL3N1bW1hcnkuYXNweD9ET0k9MTAuMTExNyUyZjEyLjc3NDkwMyZOYW1lPUppbStLdXJvc2UiPjxzcGFuIGNsYXNzPSdzZXBhcmF0b3InPjs8L3NwYW4+IEppbSBLdXJvc2U8L2E+ZGQCHg9kFgICAQ9kFgICAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCAhYEZg9kFgJmDxUBeTxzdHJvbmc+TWljaGFlbCBaaW5rPC9zdHJvbmc+LCA8c3Ryb25nPll1IEd1PC9zdHJvbmc+LCA8c3Ryb25nPkppbSBLdXJvc2U8L3N0cm9uZz48cD5Vbml2LiBvZiBNYXNzYWNodXNldHRzL0FtaGVyc3Q8L3A+DQpkAgEPZBYCZg8VATs8c3Ryb25nPkt5b3VuZ3dvbiBTdWg8L3N0cm9uZz48cD5JbGxpbm9pcyBTdGF0ZSBVbml2LjwvcD4NCmQCIA8PFgIfAAXlATxpPlByb2MuIFNQSUU8L2k+IDY4MTgsIE11bHRpbWVkaWEgQ29tcHV0aW5nIGFuZCBOZXR3b3JraW5nIDIwMDgsIDY4MTgwNSAoPHNwYW4gY2xhc3M9InB1YmRhdGVIaXN0b3J5Ij48c3BhbiBjbGFzcz0ibW9udGgiPkphbnVhcnnCoDwvc3Bhbj48c3BhbiBjbGFzcz0iZGF5Ij4yOCwgPC9zcGFuPjxzcGFuIGNsYXNzPSJ5ZWFyIj4yMDA4PC9zcGFuPjwvc3Bhbj4pOyBkb2k6MTAuMTExNy8xMi43NzQ5MDNkZAIkDxYCHwFoZAIoDxYCHwAFBDY4MThkAioPEGQPFgNmAgECAhYDEAUoTXVsdGltZWRpYSBDb21wdXRpbmcgYW5kIE5ldHdvcmtpbmcgMjAwOAUoTXVsdGltZWRpYSBDb21wdXRpbmcgYW5kIE5ldHdvcmtpbmcgMjAwOGcQBR1SZXphIFJlamFpZTsgUm9nZXIgWmltbWVybWFubgUdUmV6YSBSZWphaWU7IFJvZ2VyIFppbW1lcm1hbm5nEAUfU2FuIEpvc2UsIENBIHwgSmFudWFyeSAyNywgMjAwOAUfU2FuIEpvc2UsIENBIHwgSmFudWFyeSAyNywgMjAwOGcWAGQCLA9kFgJmDw8WAh8AZWRkAjAPFgIeBG5hbWUFGk11c3RTaWduSW5PckJ1eVRoaXNBcnRpY2xlZAIyDxYEHwcFGk11c3RTaWduSW5PckJ1eVRoaXNBcnRpY2xlHwFoZAI0DxYEHwcFGk11c3RTaWduSW5PckJ1eVRoaXNBcnRpY2xlHwFoZAI2DxYEHwcFCUNhbkFjY2Vzcx8BaGQCPA8WAh8GAgEWAmYPZBYGAgEPFgIfBwUIQWJzdHJhY3RkAgMPFgIeBWNsYXNzBRBzZWN0aW9uVG9wIGZpcnN0FgQCAQ8PFgIfAAUIYWJzdHJhY3RkZAIDD2QWBgIBDxYCHwYC/////w9kAgMPDxYCHwFoZGQCBQ8PFgIfAWhkZAIHD2QWAgIBDw8WBh8ABewJPHAgY2xhc3M9InBhcmEiPldlYiBzZXJ2aWNlcyBzdWNoIGFzIFlvdVR1YmUgd2hpY2ggYWxsb3cgdGhlIGRpc3RyaWJ1dGlvbiBvZiB1c2VyLXByb2R1Y2VkIG1lZGlhIGhhdmUgcmVjZW50bHkgYmVjb21lIHZlcnkgcG9wdWxhci4gWW91VHViZS1saWtlIHNlcnZpY2VzIGFyZSBkaWZmZXJlbnQgZnJvbSBleGlzdGluZyB0cmFkaXRpb25hbCBWb0Qgc2VydmljZXMgYmVjYXVzZSB0aGUgc2VydmljZSBwcm92aWRlciBoYXMgb25seSBsaW1pdGVkIGNvbnRyb2wgb3ZlciB0aGUgY3JlYXRpb24gb2YgbmV3IGNvbnRlbnQuIFdlIGFuYWx5emUgaG93IHRoZSBjb250ZW50IGRpc3RyaWJ1dGlvbiBpbiBZb3VUdWJlIGlzIHJlYWxpemVkIGFuZCB0aGVuIGNvbmR1Y3QgYSBtZWFzdXJlbWVudCBzdHVkeSBvZiBZb3VUdWJlIHRyYWZmaWMgaW4gYSBsYXJnZSB1bml2ZXJzaXR5IGNhbXB1cyBuZXR3b3JrLiBUaGUgYW5hbHlzaXMgb2YgdGhlIHRyYWZmaWMgc2hvd3MgdGhhdDogKDEpIE5vIHN0cm9uZyBjb3JyZWxhdGlvbiBpcyBvYnNlcnZlZCBiZXR3ZWVuIGdsb2JhbCBhbmQgbG9jYWwgcG9wdWxhcml0eTsgKDIpIG5laXRoZXIgdGltZSBzY2FsZSBub3IgdXNlciBwb3B1bGF0aW9uIGhhcyBhbiBpbXBhY3Qgb24gdGhlIGxvY2FsIHBvcHVsYXJpdHkgZGlzdHJpYnV0aW9uOyAoMykgdmlkZW8gY2xpcHMgb2YgbG9jYWwgaW50ZXJlc3QgaGF2ZSBhIGhpZ2ggbG9jYWwgcG9wdWxhcml0eS4gVXNpbmcgb3VyIG1lYXN1cmVtZW50IGRhdGEgdG8gZHJpdmUgdHJhY2UtZHJpdmVuIHNpbXVsYXRpb25zLCB3ZSBhbHNvIGRlbW9uc3RyYXRlIHRoZSBpbXBsaWNhdGlvbnMgb2YgYWx0ZXJuYXRpdmUgZGlzdHJpYnV0aW9uIGluZnJhc3RydWN0dXJlcyBvbiB0aGUgcGVyZm9ybWFuY2Ugb2YgYSBZb3VUdWJlLWxpa2UgVm9EIHNlcnZpY2UuIFRoZSByZXN1bHRzIG9mIHRoZXNlIHNpbXVsYXRpb25zIHNob3cgdGhhdCBjbGllbnQtYmFzZWQgbG9jYWwgY2FjaGluZywgUDJQLWJhc2VkIGRpc3RyaWJ1dGlvbiwgYW5kIHByb3h5IGNhY2hpbmcgY2FuIHJlZHVjZSBuZXR3b3JrIHRyYWZmaWMgc2lnbmlmaWNhbnRseSBhbmQgYWxsb3cgZmFzdGVyIGFjY2VzcyB0byB2aWRlbyBjbGlwcy48L3A+JmNvcHk7ICgyMDA4KSBDT1BZUklHSFQgU1BJRS0tVGhlIEludGVybmF0aW9uYWwgU29jaWV0eSBmb3IgT3B0aWNhbCBFbmdpbmVlcmluZy4gRG93bmxvYWRpbmcgb2YgdGhlIGFic3RyYWN0IGlzIHBlcm1pdHRlZCBmb3IgcGVyc29uYWwgdXNlIG9ubHkuHghDc3NDbGFzcwUIQWJzdHJhY3QeBF8hU0ICAmRkAj4PFgIfAWgWAgIBDw9kFgIeB09uQ2xpY2sFjgF3aW5kb3cub3Blbignc2lnbmlucG9wdXAuYXNweD9yZXNvdXJjZXR5cGU9NCZyZXNvdXJjZWlkPTE0MzkyMDgmYXJ0aWNsZWlkPTgxMjUwOCZQREZTb3VyY2U9MTcnLCdwb3B1cCcsJ3Jlc2l6YWJsZT0wLHdpZHRoPTM1MHB4LGhlaWdodD0yNTBweCcpZAJADxYCHwFoFgICAQ8PFgIfAAWXCCA8YSBzdHlsZT0iY29sb3I6ICMwMEFBQjIiIGhyZWY9Imh0dHA6Ly9wcm9maWxlcy5zcGllZGlnaXRhbGxpYnJhcnkub3JnL3N1bW1hcnkuYXNweD9ET0k9MTAuMTExNyUyZjEyLjc3NDkwMyZOYW1lPU1pY2hhZWwrWmluayI+TWljaGFlbCBaaW5rPC9hPiA8YSBzdHlsZT0iY29sb3I6ICMwMEFBQjIiIGhyZWY9Imh0dHA6Ly9wcm9maWxlcy5zcGllZGlnaXRhbGxpYnJhcnkub3JnL3N1bW1hcnkuYXNweD9ET0k9MTAuMTExNyUyZjEyLjc3NDkwMyZOYW1lPUt5b3VuZ3dvbitTdWgiPjsgS3lvdW5nd29uIFN1aDwvYT4gPGEgc3R5bGU9ImNvbG9yOiAjMDBBQUIyIiBocmVmPSJodHRwOi8vcHJvZmlsZXMuc3BpZWRpZ2l0YWxsaWJyYXJ5Lm9yZy9zdW1tYXJ5LmFzcHg/RE9JPTEwLjExMTclMmYxMi43NzQ5MDMmTmFtZT1ZdStHdSI+OyBZdSBHdTwvYT4gPGEgc3R5bGU9ImNvbG9yOiAjMDBBQUIyIiBocmVmPSJodHRwOi8vcHJvZmlsZXMuc3BpZWRpZ2l0YWxsaWJyYXJ5Lm9yZy9zdW1tYXJ5LmFzcHg/RE9JPTEwLjExMTclMmYxMi43NzQ5MDMmTmFtZT1KaW0rS3Vyb3NlIj4gYW5kIEppbSBLdXJvc2U8L2E+PGJyLz4iV2F0Y2ggZ2xvYmFsLCBjYWNoZSBsb2NhbDogWW91VHViZSBuZXR3b3JrIHRyYWZmaWMgYXQgYSBjYW1wdXMgbmV0d29yazogbWVhc3VyZW1lbnRzIGFuZCBpbXBsaWNhdGlvbnMiLCA8aT5Qcm9jLiBTUElFPC9pPiA2ODE4LCBNdWx0aW1lZGlhIENvbXB1dGluZyBhbmQgTmV0d29ya2luZyAyMDA4LCA2ODE4MDUgKDxzcGFuIGNsYXNzPSJwdWJkYXRlSGlzdG9yeSI+PHNwYW4gY2xhc3M9Im1vbnRoIj5KYW51YXJ5wqA8L3NwYW4+PHNwYW4gY2xhc3M9ImRheSI+MjgsIDwvc3Bhbj48c3BhbiBjbGFzcz0ieWVhciI+MjAwODwvc3Bhbj48L3NwYW4+KTsgZG9pOjEwLjExMTcvMTIuNzc0OTAzOyA8YSB0YXJnZXQ9Il9ibGFuayIgaHJlZj0iaHR0cDovL2R4LmRvaS5vcmcvMTAuMTExNy8xMi43NzQ5MDMiPiA8c3BhbiBjbGFzcz0ibGlua0NpdGF0aW9uIj5odHRwOi8vZHguZG9pLm9yZy8xMC4xMTE3LzEyLjc3NDkwMzwvc3Bhbj4gPC9hPmRkAkIPZBYIAgEPZBYCAgEPFgIfBgIEFggCAQ9kFgICAQ8WBB8DBSMvU29sci9zZWFyY2hyZXN1bHRzLmFzcHg/cT1OZXR3b3Jrcx8EBQhOZXR3b3Jrc2QCAw9kFgICAQ8WBB8DBSYvU29sci9zZWFyY2hyZXN1bHRzLmFzcHg/cT1TaW11bGF0aW9ucx8EBQtTaW11bGF0aW9uc2QCBQ9kFgICAQ8WBB8DBSAvU29sci9zZWFyY2hyZXN1bHRzLmFzcHg/cT1WaWRlbx8EBQVWaWRlb2QCBw9kFgICAQ8WBB8DBScvU29sci9zZWFyY2hyZXN1bHRzLmFzcHg/cT1XZWIrc2VydmljZXMfBAUMV2ViIHNlcnZpY2VzZAIDDxYCHwFnFgICAQ8PFgIfAAWXCCA8YSBzdHlsZT0iY29sb3I6ICMwMEFBQjIiIGhyZWY9Imh0dHA6Ly9wcm9maWxlcy5zcGllZGlnaXRhbGxpYnJhcnkub3JnL3N1bW1hcnkuYXNweD9ET0k9MTAuMTExNyUyZjEyLjc3NDkwMyZOYW1lPU1pY2hhZWwrWmluayI+TWljaGFlbCBaaW5rPC9hPiA8YSBzdHlsZT0iY29sb3I6ICMwMEFBQjIiIGhyZWY9Imh0dHA6Ly9wcm9maWxlcy5zcGllZGlnaXRhbGxpYnJhcnkub3JnL3N1bW1hcnkuYXNweD9ET0k9MTAuMTExNyUyZjEyLjc3NDkwMyZOYW1lPUt5b3VuZ3dvbitTdWgiPjsgS3lvdW5nd29uIFN1aDwvYT4gPGEgc3R5bGU9ImNvbG9yOiAjMDBBQUIyIiBocmVmPSJodHRwOi8vcHJvZmlsZXMuc3BpZWRpZ2l0YWxsaWJyYXJ5Lm9yZy9zdW1tYXJ5LmFzcHg/RE9JPTEwLjExMTclMmYxMi43NzQ5MDMmTmFtZT1ZdStHdSI+OyBZdSBHdTwvYT4gPGEgc3R5bGU9ImNvbG9yOiAjMDBBQUIyIiBocmVmPSJodHRwOi8vcHJvZmlsZXMuc3BpZWRpZ2l0YWxsaWJyYXJ5Lm9yZy9zdW1tYXJ5LmFzcHg/RE9JPTEwLjExMTclMmYxMi43NzQ5MDMmTmFtZT1KaW0rS3Vyb3NlIj4gYW5kIEppbSBLdXJvc2U8L2E+PGJyLz4iV2F0Y2ggZ2xvYmFsLCBjYWNoZSBsb2NhbDogWW91VHViZSBuZXR3b3JrIHRyYWZmaWMgYXQgYSBjYW1wdXMgbmV0d29yazogbWVhc3VyZW1lbnRzIGFuZCBpbXBsaWNhdGlvbnMiLCA8aT5Qcm9jLiBTUElFPC9pPiA2ODE4LCBNdWx0aW1lZGlhIENvbXB1dGluZyBhbmQgTmV0d29ya2luZyAyMDA4LCA2ODE4MDUgKDxzcGFuIGNsYXNzPSJwdWJkYXRlSGlzdG9yeSI+PHNwYW4gY2xhc3M9Im1vbnRoIj5KYW51YXJ5wqA8L3NwYW4+PHNwYW4gY2xhc3M9ImRheSI+MjgsIDwvc3Bhbj48c3BhbiBjbGFzcz0ieWVhciI+MjAwODwvc3Bhbj48L3NwYW4+KTsgZG9pOjEwLjExMTcvMTIuNzc0OTAzOyA8YSB0YXJnZXQ9Il9ibGFuayIgaHJlZj0iaHR0cDovL2R4LmRvaS5vcmcvMTAuMTExNy8xMi43NzQ5MDMiPiA8c3BhbiBjbGFzcz0ibGlua0NpdGF0aW9uIj5odHRwOi8vZHguZG9pLm9yZy8xMC4xMTE3LzEyLjc3NDkwMzwvc3Bhbj4gPC9hPmRkAgcPZBYEAgEPZBYCAgEPFgIfAWhkAgMPFgIfCAUOc2lnbkluQm94IGxlZnQWBAIFD2QWBAIBDxYCHwFoZAIDDxYCHwFnZAIHD2QWCAIBDw8WAh8AZWRkAgMPDxYGHwAFOFRoZSB1c2VybmFtZSBhbmQvb3IgcGFzc3dvcmQgaXMgYmxhbmsuIFBsZWFzZSB0cnkgYWdhaW4uHg9WYWxpZGF0aW9uR3JvdXAFJXNjbTZNYWluQ29udGVudF9nbG9iYWxTaWduSW4xX3ZnTG9naW4eGENsaWVudFZhbGlkYXRpb25GdW5jdGlvbgUsc2NtNk1haW5Db250ZW50X2dsb2JhbFNpZ25JbjFfQ2xpZW50VmFsaWRhdGVkZAIJDw8WBB8MBSVzY202TWFpbkNvbnRlbnRfZ2xvYmFsU2lnbkluMV92Z0xvZ2luHgtQb3N0QmFja1VybAVHaHR0cHM6Ly9wcm9jZWVkaW5ncy5zcGllZGlnaXRhbGxpYnJhcnkub3JnL3NpZ25pbi5hc3B4P2FydGljbGVpZD04MTI1MDhkZAINDxYCHwFoZAIJD2QWAgIBD2QWAgIND2QWAgIBD2QWAmYPZBYCAgEPFgIfAwWYAWh0dHBzOi8vc3BpZS5vcmcvYXBwL2FjY291bnRtYW5hZ2VyL2NyZWF0ZS9hY2NvdW50aW5mb3JtYXRpb24uYXNweD9SZXR1cm5VUkw9aHR0cHMlM2ElMmYlMmZzcGllZGlnaXRhbGxpYnJhcnkub3JnJTJmcHJvY2VlZGluZy5hc3B4JTNmYXJ0aWNsZWlkJTNkODEyNTA4ZAJOD2QWAgIBD2QWCgIZD2QWAgIBDw8WAh4DYWlkAtzLMWQWAmYPZBYCZg9kFggCAQ8WAh8BaBYOAgEPFgIfAAVlV2F0Y2ggZ2xvYmFsLCBjYWNoZSBsb2NhbDogWW91VHViZSBuZXR3b3JrIHRyYWZmaWMgYXQgYSBjYW1wdXMgbmV0d29yazogbWVhc3VyZW1lbnRzIGFuZCBpbXBsaWNhdGlvbnNkAgUPDxYCHwBlZGQCCQ8PFgIeFFZhbGlkYXRpb25FeHByZXNzaW9uBSxcdysoWy0rLiddXHcrKSpAXHcrKFstLl1cdyspKlwuXHcrKFstLl1cdyspKmRkAgsPDxYCHwBlZGQCEQ8PFgIfEAVgXHcrKFstKy4nXVx3KykqQFx3KyhbLS5dXHcrKSpcLlx3KyhbLS5dXHcrKSooO1x3KyhbLSsuJ11cdyspKkBcdysoWy0uXVx3KykqXC5cdysoWy0uXVx3KykqKXswLDl9ZGQCFQ8WAh4FVmFsdWUFgwEncyBFbGVjdHJvbmljIEltYWdpbmcgMjAwODogJ1dhdGNoIGdsb2JhbCwgY2FjaGUgbG9jYWw6IFlvdVR1YmUgbmV0d29yayB0cmFmZmljIGF0IGEgY2FtcHVzIG5ldHdvcms6IG1lYXN1cmVtZW50cyBhbmQgaW1wbGljYXRpb25zJ2QCFw8PFgIfAAWDASdzIEVsZWN0cm9uaWMgSW1hZ2luZyAyMDA4OiAnV2F0Y2ggZ2xvYmFsLCBjYWNoZSBsb2NhbDogWW91VHViZSBuZXR3b3JrIHRyYWZmaWMgYXQgYSBjYW1wdXMgbmV0d29yazogbWVhc3VyZW1lbnRzIGFuZCBpbXBsaWNhdGlvbnMnZGQCAw9kFgICAw8WAh8ABWVXYXRjaCBnbG9iYWwsIGNhY2hlIGxvY2FsOiBZb3VUdWJlIG5ldHdvcmsgdHJhZmZpYyBhdCBhIGNhbXB1cyBuZXR3b3JrOiBtZWFzdXJlbWVudHMgYW5kIGltcGxpY2F0aW9uc2QCBQ9kFgQCAQ8PFgQfAAUXRGlnaXRhbExpYnJhcnlAc3BpZS5vcmcfBQUebWFpbHRvOkRpZ2l0YWxMaWJyYXJ5QHNwaWUub3JnZGQCAw8WAh8ABWVXYXRjaCBnbG9iYWwsIGNhY2hlIGxvY2FsOiBZb3VUdWJlIG5ldHdvcmsgdHJhZmZpYyBhdCBhIGNhbXB1cyBuZXR3b3JrOiBtZWFzdXJlbWVudHMgYW5kIGltcGxpY2F0aW9uc2QCBw8WAh8BZxYEAgEPFgIfAAU9WW91IG11c3QgYmUgbG9nZ2VkIGluIGFzIGFuIGluZGl2aWR1YWwgdXNlciB0byBzaGFyZSBjb250ZW50LmQCAw8WAh8ABWVXYXRjaCBnbG9iYWwsIGNhY2hlIGxvY2FsOiBZb3VUdWJlIG5ldHdvcmsgdHJhZmZpYyBhdCBhIGNhbXB1cyBuZXR3b3JrOiBtZWFzdXJlbWVudHMgYW5kIGltcGxpY2F0aW9uc2QCHQ9kFgICAQ9kFgICAw9kFgICAQ8PFgIfAAWIAiBNaWNoYWVsIFppbmsgOyBLeW91bmd3b24gU3VoIDsgWXUgR3UgOyBKaW0gS3Vyb3NlOyBXYXRjaCBnbG9iYWwsIGNhY2hlIGxvY2FsOiBZb3VUdWJlIG5ldHdvcmsgdHJhZmZpYyBhdCBhIGNhbXB1cyBuZXR3b3JrOiBtZWFzdXJlbWVudHMgYW5kIGltcGxpY2F0aW9ucy4gUHJvYy4gU1BJRSA2ODE4LCBNdWx0aW1lZGlhIENvbXB1dGluZyBhbmQgTmV0d29ya2luZyAyMDA4LCA2ODE4MDUgKEphbnVhcnnCoDI4LCAyMDA4KTsgZG9pOjEwLjExMTcvMTIuNzc0OTAzLmRkAh8PFgIfBGVkAiMPFgIfAWhkAiUPFgIfAWhkAlAPDxYCHhZyZWxhdGVkYXJ0aWNsZXNfbG9hZGVkBQR0cnVlZBYIAgUPFgIfBgIEFggCAQ9kFgJmDxUCCDE1MDAyMjU2CE5ldHdvcmtzZAICD2QWAmYPFQIIMTUwMDMxNjULU2ltdWxhdGlvbnNkAgMPZBYCZg8VAggxNTAwMzY4MAVWaWRlb2QCBA9kFgJmDxUCCDE1MDAzNzY2DFdlYiBzZXJ2aWNlc2QCCw8WAh8EBZwOPGRpdiBjbGFzcz0icG9ydGxldENvbnRlbnRTZWN0aW9uIj48ZGl2IGNsYXNzPSJjb250ZW50VGl0bGUiPjxhIGlkPSIxODE2Nzc4IiBocmVmPSJodHRwOi8vb3B0aWNhbGVuZ2luZWVyaW5nLnNwaWVkaWdpdGFsbGlicmFyeS5vcmcvYXJ0aWNsZS5hc3B4P2FydGljbGVpZD0xODE2Nzc4JmpvdXJuYWxpZD05MiI+U3RyYXBkb3duIGZpYmVyIG9wdGljIGd5cm9jb21wYXNzIHVzaW5nIGFkYXB0aXZlIG5ldHdvcmstYmFzZWQgZnV6enkgaW5mZXJlbmNlIHN5c3RlbTwvYT48L2Rpdj48ZGl2IGNsYXNzPSJjb250ZW50SW5mbyI+T3B0aWNhbCBFbmdpbmVlcmluZyAoSmFudWFyeSAxLCAyMDE0KTwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9InBvcnRsZXRDb250ZW50U2VjdGlvbiI+PGRpdiBjbGFzcz0iY29udGVudFRpdGxlIj48YSBpZD0iMTA5OTM2MiIgaHJlZj0iaHR0cDovL2VsZWN0cm9uaWNpbWFnaW5nLnNwaWVkaWdpdGFsbGlicmFyeS5vcmcvYXJ0aWNsZS5hc3B4P2FydGljbGVpZD0xMDk5MzYyJmpvdXJuYWxpZD05NCI+RWZmaWNpZW50IGFsbG9jYXRpb24gb2YgcGFja2V0LWxldmVsIGZvcndhcmQgZXJyb3IgY29ycmVjdGlvbiBpbiB2aWRlbyBzdHJlYW1pbmcgb3ZlciB0aGUgSW50ZXJuZXQ8L2E+PC9kaXY+PGRpdiBjbGFzcz0iY29udGVudEluZm8iPkouIEVsZWN0cm9uaWMgSW1hZ2luZyAoQXByaWwgMSwgMjAwNyk8L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSJwb3J0bGV0Q29udGVudFNlY3Rpb24iPjxkaXYgY2xhc3M9ImNvbnRlbnRUaXRsZSI+PGEgaWQ9IjExMDIwMDEiIGhyZWY9Imh0dHA6Ly9vcHRpY2FsZW5naW5lZXJpbmcuc3BpZWRpZ2l0YWxsaWJyYXJ5Lm9yZy9hcnRpY2xlLmFzcHg/YXJ0aWNsZWlkPTExMDIwMDEmam91cm5hbGlkPTkyIj5FcnJvciByZXNpbGllbnQgdGV4dHVyZSBjb2Rpbmcgc2NoZW1lIGZvciB3aXJlbGVzcyBWaWRlbyB0cmFuc21pc3Npb24gYmFzZWQgb24gY29lZmZpY2llbnQgc2FtcGxpbmcgYW5kIGludGVybGVhdmluZzwvYT48L2Rpdj48ZGl2IGNsYXNzPSJjb250ZW50SW5mbyI+T3B0aWNhbCBFbmdpbmVlcmluZyAoRGVjZW1iZXIgMSwgMjAwNSk8L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSJwb3J0bGV0Q29udGVudFNlY3Rpb24gdmlld01vcmVBcnRpY2xlc1NlY3Rpb24iPjxkaXYgY2xhc3M9ImNvbnRlbnRUaXRsZSI+PGEgaWQ9IjExMDA1NDciIGhyZWY9Imh0dHA6Ly9vcHRpY2FsZW5naW5lZXJpbmcuc3BpZWRpZ2l0YWxsaWJyYXJ5Lm9yZy9hcnRpY2xlLmFzcHg/YXJ0aWNsZWlkPTExMDA1NDcmam91cm5hbGlkPTkyIj5Hcm9vdmluZyBvbiBUZWNobm9sb2d5PC9hPjwvZGl2PjxkaXYgY2xhc3M9ImNvbnRlbnRJbmZvIj5PcHRpY2FsIEVuZ2luZWVyaW5nIChPY3RvYmVyIDEsIDIwMDQpPC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0icG9ydGxldENvbnRlbnRTZWN0aW9uIHZpZXdNb3JlQXJ0aWNsZXNTZWN0aW9uIj48ZGl2IGNsYXNzPSJjb250ZW50VGl0bGUiPjxhIGlkPSIxMDk3NjgzIiBocmVmPSJodHRwOi8vZWxlY3Ryb25pY2ltYWdpbmcuc3BpZWRpZ2l0YWxsaWJyYXJ5Lm9yZy9hcnRpY2xlLmFzcHg/YXJ0aWNsZWlkPTEwOTc2ODMmam91cm5hbGlkPTk0Ij5NUEVHLWNvbXBsaWFudCBqb2ludCBzb3VyY2UvY2hhbm5lbCBjb2RpbmcgdXNpbmcgZGlzY3JldGUgY29zaW5lIHRyYW5zZm9ybSBhbmQgc3Vic3RyZWFtIHNjaGVkdWxpbmcgZm9yIHZpc3VhbCBjb21tdW5pY2F0aW9uIG92ZXIgcGFja2V0IG5ldHdvcmtzPC9hPjwvZGl2PjxkaXYgY2xhc3M9ImNvbnRlbnRJbmZvIj5KLiBFbGVjdHJvbmljIEltYWdpbmcgKEphbnVhcnkgMSwgMjAwMSk8L2Rpdj48L2Rpdj5kAg0PFgIeB2Rpc3BsYXkFBWJsb2NrZAIPDxYCHwFoZAJSDw8WAh4ZcmVsYXRlZHByb2NlZWRpbmdzX2xvYWRlZAUEdHJ1ZWQWBgIFDxYCHwYCBBYIAgEPZBYCZg8VAggxNTAwMjI1NghOZXR3b3Jrc2QCAg9kFgJmDxUCCDE1MDAzMTY1C1NpbXVsYXRpb25zZAIDD2QWAmYPFQIIMTUwMDM2ODAFVmlkZW9kAgQPZBYCZg8VAggxNTAwMzc2NgxXZWIgc2VydmljZXNkAgsPFgIfBAWEDTxkaXYgY2xhc3M9InBvcnRsZXRDb250ZW50U2VjdGlvbiI+PGRpdiBjbGFzcz0iY29udGVudFRpdGxlIj48YSBpZD0iMTczNzY4NyIgaHJlZj0iaHR0cDovL3Byb2NlZWRpbmdzLnNwaWVkaWdpdGFsbGlicmFyeS5vcmcvcHJvY2VlZGluZy5hc3B4P2FydGljbGVpZD0xNzM3Njg3Ij4KRGVzaWduIG9mIGEgZGF0YSB0cmFuc21pc3Npb24gc3lzdGVtIGJhc2VkIG9uIGdpZ2FiaXQgZXRoZXJuZXQKPC9hPjwvZGl2PjxkaXYgY2xhc3M9ImNvbnRlbnRJbmZvIj5Qcm9jZWVkaW5ncyBvZiBTUElFIChTZXB0ZW1iZXIgMTEgMjAxMyk8L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSJwb3J0bGV0Q29udGVudFNlY3Rpb24iPjxkaXYgY2xhc3M9ImNvbnRlbnRUaXRsZSI+PGEgaWQ9IjE2Njg1NzkiIGhyZWY9Imh0dHA6Ly9wcm9jZWVkaW5ncy5zcGllZGlnaXRhbGxpYnJhcnkub3JnL3Byb2NlZWRpbmcuYXNweD9hcnRpY2xlaWQ9MTY2ODU3OSI+ClNpbXVsYXRpb24gYW5kIGFuYWx5c2lzIG9mIHZpZGVvIHN0cmVhbSB0cmFuc21pc3Npb24gYmFzZWQgb24gZGVjb2RhYmxlIGZyYW1lIHJhdGlvIG1vZGVsIGluIHdpcmVsZXNzIG5ldHdvcmsKPC9hPjwvZGl2PjxkaXYgY2xhc3M9ImNvbnRlbnRJbmZvIj5Qcm9jZWVkaW5ncyBvZiBTUElFIChNYXJjaCAxNCAyMDEzKTwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9InBvcnRsZXRDb250ZW50U2VjdGlvbiI+PGRpdiBjbGFzcz0iY29udGVudFRpdGxlIj48YSBpZD0iMTM1NDUxMiIgaHJlZj0iaHR0cDovL3Byb2NlZWRpbmdzLnNwaWVkaWdpdGFsbGlicmFyeS5vcmcvcHJvY2VlZGluZy5hc3B4P2FydGljbGVpZD0xMzU0NTEyIj5XaWRlLWFyZWEgbGl0dG9yYWwgZGlzY3JlZXQgb2JzZXJ2YXRpb246IHN1Y2Nlc3MgYXQgdGhlIHRhY3RpY2FsIGVkZ2U8L2E+PC9kaXY+PGRpdiBjbGFzcz0iY29udGVudEluZm8iPlByb2NlZWRpbmdzIG9mIFNQSUUgKE1heSAwMSAyMDEyKTwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9InBvcnRsZXRDb250ZW50U2VjdGlvbiB2aWV3TW9yZUFydGljbGVzU2VjdGlvbiI+PGRpdiBjbGFzcz0iY29udGVudFRpdGxlIj48YSBpZD0iMTM0MTc5OCIgaHJlZj0iaHR0cDovL3Byb2NlZWRpbmdzLnNwaWVkaWdpdGFsbGlicmFyeS5vcmcvcHJvY2VlZGluZy5hc3B4P2FydGljbGVpZD0xMzQxNzk4Ij5BIGRpc3RyaWJ1dGVkIG11bHRpY2hhbm5lbCBkZW1hbmQtYWRhcHRpdmUgUDJQIFZvRCBzeXN0ZW0gd2l0aCBvcHRpbWl6ZWQgY2FjaGluZyBhbmQgbmVpZ2hib3Itc2VsZWN0aW9uPC9hPjwvZGl2PjxkaXYgY2xhc3M9ImNvbnRlbnRJbmZvIj5Qcm9jZWVkaW5ncyBvZiBTUElFIChTZXB0ZW1iZXIgMDggMjAxMSk8L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSJwb3J0bGV0Q29udGVudFNlY3Rpb24gdmlld01vcmVBcnRpY2xlc1NlY3Rpb24iPjxkaXYgY2xhc3M9ImNvbnRlbnRUaXRsZSI+PGEgaWQ9Ijc0NDkyNiIgaHJlZj0iaHR0cDovL3Byb2NlZWRpbmdzLnNwaWVkaWdpdGFsbGlicmFyeS5vcmcvcHJvY2VlZGluZy5hc3B4P2FydGljbGVpZD03NDQ5MjYiPlNPQSBhcHByb2FjaCB0byBiYXR0bGUgY29tbWFuZDogc2ltdWxhdGlvbiBpbnRlcm9wZXJhYmlsaXR5PC9hPjwvZGl2PjxkaXYgY2xhc3M9ImNvbnRlbnRJbmZvIj5Qcm9jZWVkaW5ncyBvZiBTUElFIChBcHJpbCAyMyAyMDEwKTwvZGl2PjwvZGl2PmQCDQ8WAh8TBQVibG9ja2QCVA8PFgIeFnJlbGF0ZWRjaGFwdGVyc19sb2FkZWQFBHRydWVkFgYCAw8WAh8GAgMWBgIBD2QWAmYPFQIIMTUwMDIyNTYITmV0d29ya3NkAgIPZBYCZg8VAggxNTAwMzE2NQtTaW11bGF0aW9uc2QCAw9kFgJmDxUCCDE1MDAzNjgwBVZpZGVvZAIJDxYCHwQFnQ88ZGl2IGNsYXNzPSJwb3J0bGV0Q29udGVudFNlY3Rpb24iPjxkaXYgY2xhc3M9ImNvbnRlbnRJbmZvIj48YSBocmVmPSJodHRwOi8vZWJvb2tzLnNwaWVkaWdpdGFsbGlicmFyeS5vcmcvY29udGVudC5hc3B4P2Jvb2tpZD0xMDImc2VjdGlvbmlkPTMxNTcwNjUyIiBpZD0iYUxpbmsiPkFtcGxpZmllciBBbmFseXNpcyBhbmQgRGVzaWduIENvbmNlcHRzPC9hPjwvZGl2PjxkaXYgY2xhc3M9ImNvbnRlbnRJbmZvIj5EaWdpdGFsIGFuZCBBbmFsb2cgRmliZXIgT3B0aWMgQ29tbXVuaWNhdGlvbnMgZm9yIENBVFYgYW5kIEZUVHggQXBwbGljYXRpb25zICZndDsmIzE2MDtDaGFwdGVyIDExLiBQYXJ0IDMgUkYgYW5kIENvbnRyb2wgQ29uY2VwdHMmZ3Q7PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0icG9ydGxldENvbnRlbnRTZWN0aW9uIj48ZGl2IGNsYXNzPSJjb250ZW50SW5mbyI+PGEgaHJlZj0iaHR0cDovL2Vib29rcy5zcGllZGlnaXRhbGxpYnJhcnkub3JnL2NvbnRlbnQuYXNweD9ib29raWQ9MTYyJnNlY3Rpb25pZD0zMTU2NDg1NiIgaWQ9ImFMaW5rIj5BbiBJbnRlZ3JhdGVkIEFwcHJvYWNoIGZvciBCaW9sb2dpY2FsIERpc2NvdmVyeTwvYT48L2Rpdj48ZGl2IGNsYXNzPSJjb250ZW50SW5mbyI+QW4gRW5naW5lZXJpbmcgSW50cm9kdWN0aW9uIHRvIEJpb3RlY2hub2xvZ3kmZ3Q7JiMxNjA7Q2hhcHRlciA0LiBQYXJ0IEkgSW50cm9kdWN0aW9uIHRvIEJpb2xvZ3kmZ3Q7PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0icG9ydGxldENvbnRlbnRTZWN0aW9uIj48ZGl2IGNsYXNzPSJjb250ZW50SW5mbyI+PGEgaHJlZj0iaHR0cDovL2Vib29rcy5zcGllZGlnaXRhbGxpYnJhcnkub3JnL2NvbnRlbnQuYXNweD9ib29raWQ9MTAyJnNlY3Rpb25pZD0zMTU3MDY2OCIgaWQ9ImFMaW5rIj5UcmFuc2NlaXZlcnMgYW5kIFR1bmFibGUgV2F2ZWxlbmd0aCBUcmFuc2NlaXZlciBNb2R1bGVzPC9hPjwvZGl2PjxkaXYgY2xhc3M9ImNvbnRlbnRJbmZvIj5EaWdpdGFsIGFuZCBBbmFsb2cgRmliZXIgT3B0aWMgQ29tbXVuaWNhdGlvbnMgZm9yIENBVFYgYW5kIEZUVHggQXBwbGljYXRpb25zICZndDsmIzE2MDtDaGFwdGVyIDE5LiBQYXJ0IDUgRGlnaXRhbCBUcmFuc2NlaXZlcnMgUGVyZm9ybWFuY2UmZ3Q7PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0icG9ydGxldENvbnRlbnRTZWN0aW9uIHZpZXdNb3JlU2VjdGlvbnNTZWN0aW9uIj48ZGl2IGNsYXNzPSJjb250ZW50SW5mbyI+PGEgaHJlZj0iaHR0cDovL2Vib29rcy5zcGllZGlnaXRhbGxpYnJhcnkub3JnL2NvbnRlbnQuYXNweD9ib29raWQ9MTAxJnNlY3Rpb25pZD0zMTU2MTc5MyIgaWQ9ImFMaW5rIj5Ub3dhcmQgUGhvdG9uaWMgSW50ZWdyYXRlZCBDaXJjdWl0IEFsbC1PcHRpY2FsIFNpZ25hbCBQcm9jZXNzaW5nIEJhc2VkIG9uIEtlcnIgTm9ubGluZWFyaXRpZXM8L2E+PC9kaXY+PGRpdiBjbGFzcz0iY29udGVudEluZm8iPkFkdmFuY2VzIGluIEluZm9ybWF0aW9uIE9wdGljcyBhbmQgUGhvdG9uaWNzICZndDsmIzE2MDtDaGFwdGVyIDMxLiBDb21tdW5pY2F0aW9ucyBhbmQgTmV0d29ya3MmZ3Q7PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0icG9ydGxldENvbnRlbnRTZWN0aW9uIHZpZXdNb3JlU2VjdGlvbnNTZWN0aW9uIj48ZGl2IGNsYXNzPSJjb250ZW50SW5mbyI+PGEgaHJlZj0iaHR0cDovL2Vib29rcy5zcGllZGlnaXRhbGxpYnJhcnkub3JnL2NvbnRlbnQuYXNweD9ib29raWQ9MTAxJnNlY3Rpb25pZD0zMTU2MTc5NSIgaWQ9ImFMaW5rIj5VbHRyYWZhc3QgUGhvdG9uaWMgUHJvY2Vzc2luZyBBcHBsaWVkIHRvIFBob3RvbmljIE5ldHdvcmtzPC9hPjwvZGl2PjxkaXYgY2xhc3M9ImNvbnRlbnRJbmZvIj5BZHZhbmNlcyBpbiBJbmZvcm1hdGlvbiBPcHRpY3MgYW5kIFBob3RvbmljcyAmZ3Q7JiMxNjA7Q2hhcHRlciAzMi4gQ29tbXVuaWNhdGlvbnMgYW5kIE5ldHdvcmtzJmd0OzwvZGl2PjwvZGl2PmQCCw8WAh8TBQVibG9ja2QCVg9kFgICAQ8WAh8GAgIWBGYPZBYCZg8VAgQ2MTQ2KENvbW11bmljYXRpb24gJiBJbmZvcm1hdGlvbiBUZWNobm9sb2dpZXNkAgEPZBYCZg8VAgQ2MTUyCE5ldHdvcmtzZAJYDw8WBB8PAtzLMR8BaGQWAgIBDxYCHwZmZAJaD2QWAgIBDxYCHwFoZAIHDw8WAh8BZ2QWCgIBD2QWAmYPFgIfAwVEaHR0cDovL3Byb2NlZWRpbmdzLnNwaWVkaWdpdGFsbGlicmFyeS5vcmcvQ29uZmVyZW5jZVByb2NlZWRpbmdzLmFzcHhkAgIPZBYCZg8WAh8DBTRodHRwOi8vSm91cm5hbHMuc3BpZWRpZ2l0YWxsaWJyYXJ5Lm9yZy9qb3VybmFscy5hc3B4ZAIDD2QWAmYPFgIfAwUvaHR0cDovL2Vib29rcy5zcGllZGlnaXRhbGxpYnJhcnkub3JnL2Jvb2tzLmFzcHhkAgQPZBYCZg8WAh8DBS5odHRwOi8vc3BpZWRpZ2l0YWxsaWJyYXJ5Lm9yZy9jb2xsZWN0aW9ucy5hc3B4ZAIIDxYCHwFoZAILD2QWBAIBD2QWAgIBDxYCHwFnZAIDDxYCHwgFDnNpZ25JbkJveCBsZWZ0FgICBw9kFggCAQ8PFgIfAGVkZAIDDw8WBh8ABThUaGUgdXNlcm5hbWUgYW5kL29yIHBhc3N3b3JkIGlzIGJsYW5rLiBQbGVhc2UgdHJ5IGFnYWluLh8MBRZnbG9iYWxTaWduSW4xMV92Z0xvZ2luHw0FHWdsb2JhbFNpZ25JbjExX0NsaWVudFZhbGlkYXRlZGQCCQ8PFgQfDAUWZ2xvYmFsU2lnbkluMTFfdmdMb2dpbh8OBUdodHRwczovL3Byb2NlZWRpbmdzLnNwaWVkaWdpdGFsbGlicmFyeS5vcmcvc2lnbmluLmFzcHg/YXJ0aWNsZWlkPTgxMjUwOGRkAg0PFgIfAWhkZLU84DgAwpHSytoIFjpBHIUftVHd2bk2dXfh40j+/4Xs">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/signInDialogs.js" type="text/javascript"></script><script language="javascript" type="text/javascript">
+function scm6MainContent_globalSignIn1_ClientValidate(sender,args) {
+var userName = $('#txtEmail').val();
+var userPassword = $('#txtPassword').val();
+if ((userName.length == 0) || (userPassword.length == 0)) {
+$('scm6MainContent_globalSignIn1_lblErrorMessage').empty();
+args.IsValid = false;
+}
+else {
+args.IsValid = true;
+}
+}
+</script>
+<script language="javascript" type="text/javascript">
+function forgotPassword() {
+window.open("/popupForgotPassword.aspx","myWindow","status = 1, height = 275, width = 610, resizable = 0");
+}
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+function CallBackArticles(arg,context){WebForm_DoCallback('ctl00$scm6MainContent$ucRelatedArticles',arg,ArticleDatafromServer,context,null,false);}function CallBackProcArticles(arg,context){WebForm_DoCallback('ctl00$scm6MainContent$ucRelatedProceedings',arg,proceedingDatafromServer,context,null,false);}function CallBackSections(arg,context){WebForm_DoCallback('ctl00$scm6MainContent$ucRelatedBooks',arg,SectionDatafromServer,context,null,false);}//]]>
+</script>
+<script language="javascript" type="text/javascript">
+function globalSignIn11_ClientValidate(sender,args) {
+var userName = $('#txtEmail').val();
+var userPassword = $('#txtPassword').val();
+if ((userName.length == 0) || (userPassword.length == 0)) {
+$('globalSignIn11_lblErrorMessage').empty();
+args.IsValid = false;
+}
+else {
+args.IsValid = true;
+}
+}
+</script>
+
+<script src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/ScriptResource.axd" type="text/javascript"></script>
+<script src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/WebResource(1).axd" type="text/javascript"></script>
+<script src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/ScriptResource(1).axd" type="text/javascript"></script>
+<script src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/ScriptResource(2).axd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+null;if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="n0hMM02Mlo1gYF1dq-HCFVeO__sXUjDC4hNy0a9aFLIP3BVp7mSQ_kb23-DYeu2qUgbtPWHdcL0IYFRPIiFp3spBovK3X29Y94xNKmQzuYw1">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWMALope2iDAL7qcJKAp6ixdcNApTBn+UOArPV4Z0PAo7I/dYFAqC9h8QEAvCCxeILArC3u9cMAvmS3OQIAsPvueMCArnjjYILApja6Q8CrpjuggoC7q/XuwEC8o/csg4CrfrQ5w0CzKq/zwoCobTeugIC79veiQkCqoH3pgIC1/PLtQwC+9mF+w0C7KS0rQ4CkK3Cgg0CvMz/vAsCl/6NoQkC3r3pqgYChdHWjgcCyu2+7gMCxNLg5wYCk7DL7wcCoMCk/AMCmePv9Q4C7ue8+AQC7vjT0QsCo6zUrg8CrbD2sgIClPPIsAYCqJP8rQoC08jauggChqedzAoCtb7l7AICnd7C9wkClav2/AIC6Nid1gYCyum3fgLd5qTqCsaFbzDtZnH0t47HuGu/wf1SUrMPOnBIbZxzh471zpGj">
+</div>
+    <!--Global Page Content Section-->
+    <div class="pageContentHolder">
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$scm6ScriptManager', 'Form1', ['tctl00$scm6MainContent$ucArticleToolbox$ucSendEmail$upBody','scm6MainContent_ucArticleToolbox_ucSendEmail_upBody'], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+
+ <!--Top Advertisement Banner Section-->
+    <div class="bannerTop hide">
+
+      <div class="addBanner navbar">
+            <span id="leaderboardAdLabel" class="sprite-globalHeader sprite-ad_label_vert"></span>           
+            
+            
+      </div>
+</div><!-- // .bannerTop -->
+
+<div class="accountNavWrapper">    
+    <div class="accountNavBar navbar clearfix">
+        <div class="left"><a href="http://spie.org/"><img src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/logo_SPIE_masthead.png" style="margin-top:5px;"></a></div>
+        <div class="right siteUserInfo">
+            
+            <div id="globalHeader_divUsernameLoggedOut">
+                <span class="sprite-globalHeader sprite-icon_user"></span>
+				<div class="inline-block nobar">
+					<a href="http://proceedings.spiedigitallibrary.org/signin.aspx?RedirectURL=/proceeding.aspx?articleid=812508" id="globalHeader_aSignin" class="uppercase">Sign In</a>
+				</div>
+				<div class="inline-block whitebar">
+					<a href="http://spiedigitallibrary.org/store/Home.aspx">Subscribe</a>
+				</div>
+				<div class="inline-block whitebar">
+					<a href="http://proceedings.spiedigitallibrary.org/public/contact.aspx">Contact Us</a>
+				</div>
+				<div class="inline-block whitebar">
+					<a href="http://proceedings.spiedigitallibrary.org/ss/help.aspx">Help</a>
+				</div>
+            </div>
+        </div>
+	</div><!-- // .secondaryNavigationBar -->
+</div>   
+
+
+<div id="globalHeader_dvMastHead" class="mastHead">
+    
+    <div id="globalHeader_divMicrositeHeader" class="siteHeader navbar">
+        <div class="left">
+            <a id="siteLogo" class="sprite-logos ir" href="http://spiedigitallibrary.org/index.aspx">[SPIE Proceedings]</a>
+        </div>
+        
+        <div id="globalHeader_divSearchSection" class="searchSection">
+            <div class="searchTerm">
+                <div id="divtextSearch">
+                    <input type="text" name="txtSearchTerm" id="txtSearchTerm" autocomplete="off" title="" onkeyup="return; if( this.value.length &gt; 2 ) smartAutoCompleteSetup();">
+                    <input type="hidden" name="hiddenSearchTerm" id="hiddenSearchTerm" value="">
+                    <input type="text" id="microSiteSearchInputHint" autocomplete="off" class="search-input">
+                    <ul id="microSiteAutoCompleteResults" class="term-list hidden"></ul>
+                </div>
+            </div>
+         &nbsp; &nbsp;
+            <div class="searchCriteria">
+                
+                <div class="searchButton">
+                    <label style="cursor: pointer">Search</label>
+                    
+                </div>
+                <div class="searchLink">
+                    
+                    
+                    <a href="http://proceedings.spiedigitallibrary.org/Solr/advancedSearch.aspx" id="globalHeader_lnkAdvancedSearch">Advanced<br>Search</a>
+                </div>
+            </div>
+        
+        </div>
+
+    </div>
+	<div id="globalHeader_dvTopNav">
+		<div class="globalNavContainer navbar clearfix">
+			<div id="globalHeader_divUmbrellaNavigationBar" class="umbrellaNavBar right"><ul class="nav"><li><a href="http://spiedigitallibrary.org/index.aspx">HOME</a></li>
+<li><a href="http://proceedings.spiedigitallibrary.org/conferenceproceedings.aspx">PROCEEDINGS</a></li>
+<li><a href="http://journals.spiedigitallibrary.org/journals.aspx">JOURNALS</a><ul id="globalNav_JOURNALS" class="subNav"><li><a href="http://opticalengineering.spiedigitallibrary.org/journal.aspx?journalid=92">Optical Engineering</a></li><li><a href="http://biomedicaloptics.spiedigitallibrary.org/journal.aspx?journalid=93">Journal of Biomedical Optics</a></li><li><a href="http://electronicimaging.spiedigitallibrary.org/journal.aspx?journalid=94">Journal of Electronic Imaging</a></li><li><a href="http://nanolithography.spiedigitallibrary.org/journal.aspx?journalid=95">Journal of Micro/Nanolithography, MEMS, and MOEMS</a></li><li><a href="http://remotesensing.spiedigitallibrary.org/journal.aspx?journalid=96">Journal of Applied Remote Sensing</a></li><li><a href="http://nanophotonics.spiedigitallibrary.org/journal.aspx?journalid=97">Journal of Nanophotonics</a></li><li><a href="http://photonicsforenergy.spiedigitallibrary.org/journal.aspx?journalid=98">Journal of Photonics for Energy</a></li><li><a href="http://medicalimaging.spiedigitallibrary.org/journal.aspx?journalid=165">Journal of Medical Imaging</a></li><li><a href="http://astronomicaltelescopes.spiedigitallibrary.org/journal.aspx?journalid=166">Journal of Astronomical Telescopes, Instruments, and Systems</a></li><li><a href="http://reviews.spiedigitallibrary.org/journal.aspx">SPIE Reviews</a></li></ul></li><li><a href="http://ebooks.spiedigitallibrary.org/books.aspx">eBOOKS</a></li>
+<li><a href="http://spiedigitallibrary.org/collections.aspx">TOPIC COLLECTIONS</a></li>
+<li><a href="http://spiedigitallibrary.org/ss/librarians.aspx">LIBRARIANS</a></li>
+</ul></div>
+			
+		</div>
+	</div>
+    <div id="globalHeader_divMicroNavBar" class="microNavBar navbar serif clearfix"><ul><li><a href="http://proceedings.spiedigitallibrary.org/ConferenceProceedings.aspx">Proceedings Home</a></li>
+<li><a href="http://proceedings.spiedigitallibrary.org/ProceedingBrowse.aspx">Browse Proceedings &gt;</a></li>
+<li><a href="http://proceedings.spiedigitallibrary.org/ProceedingBrowse.aspx#Conference">by Conference</a></li>
+<li><a href="http://proceedings.spiedigitallibrary.org/ProceedingBrowse.aspx#Year">By Year</a></li>
+<li><a href="http://proceedings.spiedigitallibrary.org/ProceedingBrowse.aspx#VolumeNo">by Volume No.</a></li>
+<li><a href="http://proceedings.spiedigitallibrary.org/ProceedingBrowse.aspx#VolumeTitle">by Volume Title</a></li>
+<li class="clearAll"></li></ul></div>
+
+    <div class="clearAll">
+    </div>
+    <input type="hidden" name="hiddenSiteURL" id="hiddenSiteURL" value="http://spiedigitallibrary.org/">
+</div>
+<!--TE-6514 Solr Implementation-->
+<input name="ctl00$globalHeader$hfIsSolrSearchEnabled" type="hidden" id="hfIsSolrSearchEnabled" value="1">
+<input name="ctl00$globalHeader$hfSolrMaxAllowSearchChar" type="hidden" id="hfSolrMaxAllowSearchChar" value="255">
+<input name="ctl00$globalHeader$hfSolrJournalID" type="hidden" id="hfSolrJournalID">
+<input name="ctl00$globalHeader$hfSolrBookID" type="hidden" id="hfSolrBookID">
+<input name="ctl00$globalHeader$hfSolrAutoSuggestMinimumCharactersLength" type="hidden" id="hfSolrAutoSuggestMinimumCharactersLength" value="3">
+
+        
+    <input type="hidden" name="ctl00$scm6MainContent$hfArticleId" id="hfArticleId" value="812508">
+    <input type="hidden" name="ctl00$scm6MainContent$hfPersonalUserLoggedIn" id="hfPersonalUserLoggedIn">
+    <input type="hidden" name="ctl00$scm6MainContent$hfRedirectURLForMyPOLFiguresAndTables" id="hfRedirectURLForMyPOLFiguresAndTables" value="signin.aspx?ispopup=true&amp;alerts=true&amp;RedirectURL=~/proceeding.aspx?articleid=812508">
+    <input type="hidden" name="ctl00$scm6MainContent$hfUserHasSubscription" id="hfUserHasSubscription" value="0">
+    <input type="hidden" name="ctl00$scm6MainContent$hfShowsubscription" id="hfShowsubscription" value="0">
+    <div class="wrapper">
+        <!--Page Header Content Holder Starts-->
+        <div class="pageHeaderContentHolder">
+            <div class="siteVolume">
+                <a id="scm6MainContent_lnkFullIssueName" href="http://proceedings.spiedigitallibrary.org/volume.aspx?conferenceid=1192&volumeid=1870">SPIE Proceedings | Volume 6818 | Empirical Studies</a>
+                &gt;
+            </div>
+            <div class="clearAll">
+            </div>
+        </div>
+        <a id="triggerJumpLocation"></a>
+        <!--Page Header Content Holder Ends-->
+        <div class="mainContainer clearfix">
+            <div class="left contentColumn eqColumn" style="min-height: 1923px;">
+                <!--Content Body Container Column Starts-->
+                <div class="contentHeaderContainer" style="background: #fff;">
+                    <div class="contentPageHeader">
+                        <div class="articleNavLinks clearfix">
+                            <div class="pageJump">
+                                <a id="scm6MainContent_lnkPrev" class="prev" href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=812505">&lt;&nbsp;Previous Article</a><a id="scm6MainContent_lnkNext" class="next" href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=812511">Next Article&nbsp;&gt;</a>
+                            </div>
+                        </div>
+                        <div id="scm6MainContent_DivFullContentAvailableMessage" class="fullContentAvailableMessage hide">
+                            <h3>
+                                Full Content is available to subscribers
+                            </h3>
+                            <a href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=812508#">Subscribe/Learn More &nbsp;&gt;</a>
+                        </div>
+                    </div>
+                    <div class="contentSection">
+                        <span id="scm6MainContent_lblArticleType" class="contentType capitalize">Proceedings Article</span>
+                        
+                        <span class="contentDate">
+                            <span id="scm6MainContent_lblArticleDate"></span>
+                        </span>
+                        <span id="lblSuperClass"></span>
+                    </div>
+                    <!--Content Title-->
+                    <h1 class="aTitle">
+                        <span id="scm6MainContent_lblArticleTitle">Watch global, cache local: YouTube network traffic at a campus network: measurements and implications</span>
+                        
+                    </h1>
+                    <!--Author Name-->
+                    <div id="scm6MainContent_dvAuthorSection" class="authorSection sans">
+                        <span id="scm6MainContent_lblAuthors" class="authorNames"> <a style="color: #00AAB2" href="http://profiles.spiedigitallibrary.org/summary.aspx?DOI=10.1117%2f12.774903&Name=Michael+Zink">Michael Zink</a> <a style="color: #00AAB2" href="http://profiles.spiedigitallibrary.org/summary.aspx?DOI=10.1117%2f12.774903&Name=Kyoungwon+Suh"><span class="separator">;</span> Kyoungwon Suh</a> <a style="color: #00AAB2" href="http://profiles.spiedigitallibrary.org/summary.aspx?DOI=10.1117%2f12.774903&Name=Yu+Gu"><span class="separator">;</span> Yu Gu</a> <a style="color: #00AAB2" href="http://profiles.spiedigitallibrary.org/summary.aspx?DOI=10.1117%2f12.774903&Name=Jim+Kurose"><span class="separator">;</span> Jim Kurose</a></span>
+                    </div>
+                    <!--this section is to display disclosure and other info-->
+                    <div id="scm6MainContent_divDisclosures" class="disclosures">
+                        <a href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=812508#" class="disclosureLink special">[<span class="spanPlus">+</span><span style="display: none;" class="spanMinus">-</span>] Author Affiliations</a>
+                        <div id="dvauthorinfo" class="contentBody" clientidmode="Static">
+                        </div>
+                        <div id="scm6MainContent_DisclosureAndother" class="disclosureText">
+                            <div id="scm6MainContent_divAuthorAffiliation">
+                                
+                                        <strong>Michael Zink</strong>, <strong>Yu Gu</strong>, <strong>Jim Kurose</strong><p>Univ. of Massachusetts/Amherst</p>
+
+                                    
+                                        <strong>Kyoungwon Suh</strong><p>Illinois State Univ.</p>
+
+                                    
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="doi">
+                        <div class="clearfix">
+                            <div class="left aShortDesc">
+                                <span id="scm6MainContent_lblClientName"><i>Proc. SPIE</i> 6818, Multimedia Computing and Networking 2008, 681805 (<span class="pubdateHistory"><span class="month">January&nbsp;</span><span class="day">28, </span><span class="year">2008</span></span>); doi:10.1117/12.774903</span>
+                                
+                            </div>
+                            <div class="textSize">
+                                Text Size: <a id="text1" href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=812508#" class="selected" onclick="return false;">A</a>
+                                <a href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=812508#" id="text2" onclick="return false;">A</a> <a href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=812508#" id="text3" onclick="return false;">
+                                    A</a>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="conferenceInfo">
+                        <div class="conferenceInfoTitle">
+                            From Conference Volume
+                            6818
+                        </div>
+                        <br>
+                        <ul id="scm6MainContent_bListConf">
+	<li>Multimedia Computing and Networking 2008</li><li>Reza Rejaie; Roger Zimmermann</li><li>San Jose, CA | January 27, 2008</li>
+</ul>
+                    </div>
+                    <div class="highlighted">
+                        <!--Initially visible false both labels-->
+                        
+                    </div>
+                    <!-- Disclosure ends-->
+                    <!-- Storage Place to store a JS array with accessMode for each tab-->
+                    <div id="scm6MainContent_divTabAccessState" style="display: none;">
+                    </div>
+                    <!-- Tabs on the Content Page -->
+                    <div class="atabs">
+                        <div class="tabNav clearfix">
+                            <div class="atab tab1Div">
+                                <a href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=812508#tab1" id="scm6MainContent_Articletab" class="tabtracking selected" name="MustSignInOrBuyThisArticle">Abstract</a></div>
+                            <div class="atab tab5Div">
+                                </div>
+                            <div id="Div1" class="atab tab4Div">
+                                </div>
+                            <div class="atab tab8Div">
+                                </div>
+                        </div>
+                        <div class="clearAll">
+                        </div>
+                    </div>
+                </div>
+                <div class="contentBodyContainer">
+                    <!-- Start Content Holders -->
+                    <!-- Start Tab Content -->
+                    <div class="contentContainer" id="tab1" style="display: block;">
+                        <!-- End UnAuthenticated Abstract -->
+                        
+                        <span id="scm6MainContent_lblExtract"></span>
+                        <!-- Start Content REPEATER -->
+                        
+                                <div class="contentSectionTab clearfix">
+                                    <a id="scm6MainContent_rptSections_aJumplinkAnchor_0" class="jumpLinkAnchor" name="Abstract"></a>
+                                    <div id="scm6MainContent_rptSections_divSectionTop_0" class="sectionTop first">
+                                        <div class="contentJump clearfix">
+                                            <h2 class="sectionHeader">
+                                                <span id="scm6MainContent_rptSections_lblSectionTitle_0">abstract</span>
+                                            </h2>
+                                            
+                                        </div>
+                                    </div>
+                                    <div id="scm6MainContent_rptSections_divSubsectionTitle_0" class="subTitleSection">
+                                        <h6>
+                                            <span id="scm6MainContent_rptSections_lblSubsectionTitle_0" class="lblSubTitle"></span></h6>
+                                    </div>
+                                    <div id="scm6MainContent_rptSections_divcontentBody_0" class="contentBody">
+                                        <span id="scm6MainContent_rptSections_lblSection_0" class="Abstract"><p class="para">Web services such as YouTube which allow the distribution of user-produced media have recently become very popular. YouTube-like services are different from existing traditional VoD services because the service provider has only limited control over the creation of new content. We analyze how the content distribution in YouTube is realized and then conduct a measurement study of YouTube traffic in a large university campus network. The analysis of the traffic shows that: (1) No strong correlation is observed between global and local popularity; (2) neither time scale nor user population has an impact on the local popularity distribution; (3) video clips of local interest have a high local popularity. Using our measurement data to drive trace-driven simulations, we also demonstrate the implications of alternative distribution infrastructures on the performance of a YouTube-like VoD service. The results of these simulations show that client-based local caching, P2P-based distribution, and proxy caching can reduce network traffic significantly and allow faster access to video clips.</p>© (2008) COPYRIGHT SPIE--The International Society for Optical Engineering. Downloading of the abstract is permitted for personal use only.</span>
+                                    </div>
+                                    
+                                    <div id="dvVidPresents" style="display: none;">
+                                        <div>
+                                            <h2 class="sectionHeader">
+                                                Conference Presentation Video</h2>
+                                        </div>
+                                        <div class="SPIEtvDivider">
+                                        </div>
+                                        <div class="SPIETV">
+                                            <a href="http://spie.org/app/spietv/default.aspx" target="_blank">
+                                                <img src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/logo_spietv.png"></a> <span><a href="http://spie.org/app/spietv/default.aspx" target="_blank">Visit SPIE.TV</a></span>
+                                        </div>
+                                    </div>
+                                    <div id="brightcoveVideoPlaceholder">
+                                    </div>
+                                    
+                                </div>
+                            
+                        <!--Signin Starts-->
+                        
+                        
+                        <!-- End Content REPEATER -->
+                        <!-- Start SignIn Module (TODO: Yared hide full SignIn Module when user is authenticated - currently Topics and Password show all the time) -->
+                        <div id="scm6MainContent_divSignIn" class="contentSectionTab contentBody" style="margin-top: 10px;">
+                            <div id="scm6MainContent_divTopics">
+                                <div class="header">
+                                    
+                                            <h2>
+                                                Topics</h2>
+                                        
+                                            <a href="http://proceedings.spiedigitallibrary.org/Solr/searchresults.aspx?q=Networks" id="scm6MainContent_rptSigninTopics_aTopiclinks_0">Networks</a>
+                                        
+                                            ;
+                                        
+                                            <a href="http://proceedings.spiedigitallibrary.org/Solr/searchresults.aspx?q=Simulations" id="scm6MainContent_rptSigninTopics_aTopiclinks_1">Simulations</a>
+                                        
+                                            ;
+                                        
+                                            <a href="http://proceedings.spiedigitallibrary.org/Solr/searchresults.aspx?q=Video" id="scm6MainContent_rptSigninTopics_aTopiclinks_2">Video</a>
+                                        
+                                            ;
+                                        
+                                            <a href="http://proceedings.spiedigitallibrary.org/Solr/searchresults.aspx?q=Web+services" id="scm6MainContent_rptSigninTopics_aTopiclinks_3">Web services</a>
+                                        
+                                </div>
+                            </div>
+                            <div id="scm6MainContent_divCitationNON" class="citationBox">
+                                <div class="left">
+                                    Citation</div>
+                                <p class="right">
+                                    <span id="scm6MainContent_lblCitationboxnon"> <a style="color: #00AAB2" href="http://profiles.spiedigitallibrary.org/summary.aspx?DOI=10.1117%2f12.774903&Name=Michael+Zink">Michael Zink</a> <a style="color: #00AAB2" href="http://profiles.spiedigitallibrary.org/summary.aspx?DOI=10.1117%2f12.774903&Name=Kyoungwon+Suh">; Kyoungwon Suh</a> <a style="color: #00AAB2" href="http://profiles.spiedigitallibrary.org/summary.aspx?DOI=10.1117%2f12.774903&Name=Yu+Gu">; Yu Gu</a> <a style="color: #00AAB2" href="http://profiles.spiedigitallibrary.org/summary.aspx?DOI=10.1117%2f12.774903&Name=Jim+Kurose"> and Jim Kurose</a><br>"Watch global, cache local: YouTube network traffic at a campus network: measurements and implications", <i>Proc. SPIE</i> 6818, Multimedia Computing and Networking 2008, 681805 (<span class="pubdateHistory"><span class="month">January&nbsp;</span><span class="day">28, </span><span class="year">2008</span></span>); doi:10.1117/12.774903; <a target="_blank" href="http://dx.doi.org/10.1117/12.774903"> <span class="linkCitation">http://dx.doi.org/10.1117/12.774903</span> </a></span></p>
+                            </div>
+                            <br>
+                            <div>
+                                <div id="scm6MainContent_dvmExpMsg" class="sessionExpMsg hide">
+                                    </div>
+                                <div id="contentCredentialsTab1" clientidmode="static">
+                                    <div class="contentCredentials">
+                                        <div class="accessArticlehead">
+                                            Access This Article</div>
+                                        <div class="subscriptionBox clearfix" style="height: 351px;">
+                                            <div id="divSignInAndSubscriptionUpsell">
+                                                <div id="globalSignIn1">
+                                                    
+
+<div class="globalSignIn">
+
+    <div id="scm6MainContent_globalSignIn1_rightSignIn">
+        
+        
+    </div>
+    <div class="clearAll"></div>
+
+    
+    <div id="scm6MainContent_globalSignIn1_leftSignIn" class="signInBox left">
+    <input type="hidden" name="ctl00$scm6MainContent$globalSignIn1$hfcloseparent" id="scm6MainContent_globalSignIn1_hfcloseparent">
+    <input type="hidden" name="ctl00$scm6MainContent$globalSignIn1$hfReturnURL" id="scm6MainContent_globalSignIn1_hfReturnURL" value="/proceeding.aspx?articleid=812508">
+        <div class="loginInfo">
+            <div id="scm6MainContent_globalSignIn1_signInHeader" class="signInHeader">
+                
+                <div id="scm6MainContent_globalSignIn1_signInHeader2">
+                    Sign In to Access Full Content
+                </div>
+            </div>
+            <div id="scm6MainContent_globalSignIn1_pnlSignIn" class="PnlLoginInfo" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;scm6MainContent_globalSignIn1_ibSignIn&#39;)">
+	
+            <!--validation summary control-->
+                <div class="errorMessageSection"> 
+                    <span id="scm6MainContent_globalSignIn1_lblErrorMessage" class="validationControl"></span>
+                    <span id="scm6MainContent_globalSignIn1_cvLogin" class="validationControl customvalidator" style="display: none; visibility: visible;">The username and/or password is blank. Please try again.</span>
+                </div>
+                <div class="field">
+                    <label for="txtEmail">Username</label>
+                    <input name="ctl00$scm6MainContent$globalSignIn1$txtEmail" type="text" maxlength="50" id="txtEmail" class="email">
+                </div>
+                <div class="field">
+                    <label for="txtPassword">Password</label>
+                    <input name="ctl00$scm6MainContent$globalSignIn1$txtPassword" type="password" maxlength="50" id="txtPassword" class="password">
+                </div>
+                <div class="buttonsContainer">
+                    <input type="submit" name="ctl00$scm6MainContent$globalSignIn1$ibSignIn" value="Sign In" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$scm6MainContent$globalSignIn1$ibSignIn&quot;, &quot;&quot;, true, &quot;scm6MainContent_globalSignIn1_vgLogin&quot;, &quot;https://proceedings.spiedigitallibrary.org/signin.aspx?articleid=812508&quot;, false, false))" id="scm6MainContent_globalSignIn1_ibSignIn" class="signInButton">
+                    <div id="scm6MainContent_globalSignIn1_forgotPasswordLink" class="forgotPasswordLink">
+                        
+                        <span> Forgot your password? <br>click <a href="https://spie.org/app/accountmanager/forgotpassword/forgotpassword.aspx">
+                            here</a> to reset it on our<br> main  site, spie.org</span>
+                    </div>
+                    <div class="clearAll"></div>
+                </div>
+                  
+            
+</div>
+            <div id="scm6MainContent_globalSignIn1_divCustomSignIn">
+                <div id="scm6MainContent_globalSignIn1_divSignInLink" class="signInLink">
+                    
+                    
+                    Sign in via: 
+                    <a href="http://proceedings.spiedigitallibrary.org/signinshibboleth.aspx">Shibboleth</a>&nbsp;
+                    <a class="whatisthis" id="qLoginServicesLink"><img src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/b_question.png" alt=""></a>
+                    <div class="popupDialog" id="loginServicesDialog" style="display:none;">
+                        <p>
+                            
+                              <span class="bold">Shibboleth</span> is an access management service that provides single sign-on to protected resources. It replaces the multiple user names and passwords necessary to access subscription-based content with a single user name and password that can be entered once per session. It operates independently of a user's location or IP address. If your institution uses Shibboleth authentication, please contact your site administrator to receive your user name and password.
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+</div> 
+
+                                                </div>
+                                            </div>                                            
+                                            <div id="scm6MainContent_PurchaseSubscription">
+                                                
+<script type="text/javascript">
+    function OpenLink(url) {
+        var popUpUrl = null;
+        if (url != null) {
+            popUpUrl = url;
+        } else {
+            popUpUrl = "/store/Home.aspx";
+        }
+        if (window.opener != null && !window.opener.closed) {
+            // for signpopup.aspx. this is a popup
+            window.opener.location.href = popUpUrl;
+            window.close();
+        } else {
+            // personalsignin.aspx. this is not a popup
+            window.location.href = popUpUrl;
+        }
+    }
+    $(document).ready(function () {
+
+        var tokenUsage = $get('hftokens').value;
+        if (tokenUsage == "1") {
+            $('.dvdownloadArticle').show();
+            $('.signInDetails').hide();
+        }
+        else if (tokenUsage == "0") {
+            $('.signInDetails').show();
+            $('.dvdownloadArticle').hide();
+        }
+
+        $('.dvdownloadArticle').click(
+        function (event) {
+            var tokenProductType = $get('hfTokenProductType').value;
+            var confirmationMessage = "Please confirm that you want to use a download from your personal subscription to obtain this article.";
+            if (tokenProductType == "2") {
+                confirmationMessage = "Please confirm that you want to use a download from your Institutional subscription to obtain this article.";
+            }
+            if (confirm(confirmationMessage)) {
+                ShowProgressAnimation();
+                return true;
+            }
+            else { event.stopImmediatePropagation(); return false; }
+        });
+
+    });
+
+    function setArticle(articleid) {
+        $('#hfarticleid').val(articleid);
+    }
+
+    $(document).ready(function () {
+
+        var buytokenconfirmation = $get('hfBuytokenconfirmation').value;
+        var redirectUrl = $get('hfRedirectUrl').value;
+
+        if (buytokenconfirmation == "1") {
+            var tokenProductType = $get('hfTokenProductType').value;
+            var confirmationMessage = "Click the PDF link on this page to download this article. You may access all of your downloads via your My Account page at any time.";
+            if (tokenProductType == "2") {
+                confirmationMessage = "Click the PDF link on this page to download this article.";
+            }
+            alert(confirmationMessage);
+
+            if (window.opener != null) {
+                window.opener.location.href = redirectUrl;
+            } else {
+                window.location.href = redirectUrl;
+            }
+
+            if (!$.browser.msie) {
+                window.close();
+            }
+        }
+    });
+
+    function ShowProgressAnimation() {
+        var pleaseWaitDialog = $("#progressBar").clone().removeClass('hide').dialog(
+    {
+        resizable: false,
+        height: 'auto',
+        width: 300,
+        height: 100,
+        modal: true,
+        closeText: '',
+        bgiframe: true,
+        closeOnEscape: false,
+        open: function (type, data) {
+            $(this).parent().appendTo($("form:first"));
+            $('body').css('overflow', 'auto'); //IE scrollbar fix for long checklist templates
+        }
+    });
+    }
+
+</script>
+<input type="hidden" name="ctl00$scm6MainContent$PurchaseSubscription1$hfBuytokenconfirmation" id="hfBuytokenconfirmation" value="0">
+<input type="hidden" name="ctl00$scm6MainContent$PurchaseSubscription1$hftokens" id="hftokens" value="0">
+<input type="hidden" name="ctl00$scm6MainContent$PurchaseSubscription1$hfisProceeding" id="hfisProceeding" value="1">
+<input type="hidden" name="ctl00$scm6MainContent$PurchaseSubscription1$hfarticleid" id="hfarticleid" value="0">
+<input type="hidden" name="ctl00$scm6MainContent$PurchaseSubscription1$hfRedirectUrl" id="hfRedirectUrl" value="0">
+<input type="hidden" name="ctl00$scm6MainContent$PurchaseSubscription1$hfTokenProductType" id="hfTokenProductType" value="0">
+<div id="progressBar" class="userAlertPopupProgressBar hide">
+    <img src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/ajax-loader.gif" alt="Please Wait...">
+    Processing your request... Please Wait.
+</div>
+
+<div id="scm6MainContent_PurchaseSubscription1_purchaseAccess" class="purchaseAccess">
+    <div id="scm6MainContent_PurchaseSubscription1_signinInfo" class="signInDetails" style="margin-left: 0px;">
+        <span id="dvlnkAccount" class="lnkaccount">
+            Sign in or <a href="https://spie.org/app/accountmanager/create/accountinformation.aspx?ReturnURL=https%3a%2f%2fspiedigitallibrary.org%2fproceeding.aspx%3farticleid%3d812508" id="scm6MainContent_PurchaseSubscription1_aCreateProfile">Create
+                a personal account</a> to </span><strong><a id="scm6MainContent_PurchaseSubscription1_aStoreALink" class="aStoreLink">
+                    Buy this article</a></strong> ($15
+        for members, $18
+        for non-members).
+    </div>
+    <div id="downloadArticle" clientidmode="Static">
+        <a id="scm6MainContent_PurchaseSubscription1_lbtnUseTokens" class="dvdownloadArticle" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$scm6MainContent$PurchaseSubscription1$lbtnUseTokens", "", true, "USE_TOKENS", "", false, true))" style="display: none;">Download this Article</a>
+    </div>
+    <span id="scm6MainContent_PurchaseSubscription1_cvUseTokens" class="errMsg" style="visibility:hidden;"></span>
+</div>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End SignIn Module -->
+                            <div class="clearAll">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Tab Content -->
+                    <!-- Start Tab Figures -->
+                    <div class="contentContainer" id="tab2" style="display: none;">
+                        <h2 class="sectionHeader">
+                            Figures</h2>
+                        
+                    </div>
+                    <!-- End Tab Figures -->
+                    <!-- Start Tab Tables -->
+                    <div class="contentContainer" id="tab3" style="display: none;">
+                        <h2 class="sectionHeader">
+                            Tables</h2>
+                        
+                    </div>
+                    <!-- End Tab Tables -->
+                    <!-- Start Tab References -->
+                    <div class="contentContainer" id="tab5" style="display: none;">
+                        
+                    </div>
+                    <!-- End Tab References -->
+                    <!-- Start Tab Multimedia -->
+                    <div class="contentContainer" id="tab4" style="display: none;">
+                        <div class="contentJumpLinks">
+                            <h2 class="sectionHeader">
+                                <span>MultiMedia</span></h2>
+                            <div class="divider">
+                            </div>
+                            <br>
+                            
+                        </div>
+                    </div>
+                    <!-- End Tab Multimedia -->
+                    <!-- Start Tab Citing Articles -->
+                    <div class="contentContainer" id="tab8" style="display: none;">
+                        <div class="contentBody refContainer">
+                            <div class="refRow">
+                                <div class="refContent">
+                                    <span class="bold">NOTE:</span><br>
+                                    Citing articles are presented as examples only. In non-demo SCM6 implementation,
+                                    integration with CrossRef’s "Cited By" API will populate this tab (http://www.crossref.org/citedby.html).
+                                </div>
+                                <div class="clearAll">
+                                </div>
+                            </div>
+                            <div class="refRow">
+                                <div class="refContent">
+                                    <a href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=812508#">Compression-Only CPR: Pushing the Science Forward</a><br>
+                                    Cone<br>
+                                    <i>AAM</i> 2010;304:1493-1495.
+                                </div>
+                                <div class="clearAll">
+                                </div>
+                            </div>
+                            <div class="refRow">
+                                <div class="refContent">
+                                    <a href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=812508#">All you need to read in the other general jounals</a><br>
+                                    <i>BMJ</i> 2010;341:c5893-c1494.
+                                </div>
+                                <div class="clearAll">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Tab Citing Articles -->
+                    <!-- Start Tab Comments -->
+                    <!-- End Content Holders -->
+                    <!-- Section to display during Tab Clicks-->
+                    <div id="divSignInSubscriptionUpsell" style="display: none;" class="contentContainer">
+                        <div id="testdiv" clientidmode="Static">
+                        </div>
+                        <div class="clearAll">
+                        </div>
+                    </div>
+                    <!-- Section to display during Tab Clicks-->
+                    <div class="relatedArticlesMobile">
+                    </div>
+                    <div class="collectionsMobile">
+                    </div>
+                </div>
+            </div>
+            <div class="right portletColumn eqColumn" style="min-height: 1923px;">
+                <!--Buttons for sliding Panel Right and Left-->
+                <div class="btnSlider" style="top: 334px; position: relative;">
+                    <div id="dvsliderright" clientidmode="static" class="btnSlideRight">
+                    </div>
+                    <div id="dvsliderleft" clientidmode="static" class="btnSlideLeft">
+                    </div>
+                </div>
+                <!--Portlet Right Tab Menu-->
+                <div class="portletTabMenu">
+                    <!--Right Hidden Tabs and Flyouts-->
+                    <div class="hiddenTabs clearfix">
+                        <div id="scm6MainContent_divToolBoxMsg" class="aboveToolBoxMsg">
+                            <p>
+                                Some tools below are only available to our subscribers or users with an online account.</p>
+                        </div>
+                        <!--toolbox message ends here-->
+                        <div class="rightTabInfo">
+                        </div>
+                        <!--External Links Starts-->
+                        <div id="scm6MainContent_ToolBox" class="aLinks clearfix">
+                            
+
+<script type="text/javascript">
+
+    function detailsHandler(href) {
+        var hiddenField = document.getElementById('scm6MainContent_ucArticleToolbox_ucGetCitation_articleId').value;
+        //get any other hidden fields and append them.
+        href = href + "&articleid=" + hiddenField;
+        //then redirect to the revised url
+        window.location = href;
+    }
+
+</script>
+
+    <ul id="rightPopupMenu" class="rightpopup tools" style="list-style-type:none;">
+        <input type="hidden" name="ctl00$scm6MainContent$ucArticleToolbox$hfArticleAlerts" id="hfArticleAlerts" value="MustSignInOrRegisterForFreeAccount">
+        <input type="hidden" name="ctl00$scm6MainContent$ucArticleToolbox$hfArticleGetCitation" id="hfArticleGetCitation" value="1">
+        <input type="hidden" name="ctl00$scm6MainContent$ucArticleToolbox$hfArticleEmail" id="hfArticleEmail" value="1">
+        <input type="hidden" name="ctl00$scm6MainContent$ucArticleToolbox$hfArticleShareThis" id="hfArticleShareThis" value="1">
+        <input type="hidden" name="ctl00$scm6MainContent$ucArticleToolbox$hfArticlePDFDownload" id="hfArticlePDFDownload" value="MustSignInOrBuyThisArticle">
+        <input type="hidden" name="ctl00$scm6MainContent$ucArticleToolbox$hfArticlePrintableView" id="hfArticlePrintableView" value="MustSignInOrBuyThisArticle">
+        <input type="hidden" name="ctl00$scm6MainContent$ucArticleToolbox$hfArticleSlideset" id="hfArticleSlideset" value="MustSignInOrBuyThisArticle">
+        <input type="hidden" name="ctl00$scm6MainContent$ucArticleToolbox$hfArticleDataSupplement" id="hfArticleDataSupplement">
+        <input type="hidden" name="ctl00$scm6MainContent$ucArticleToolbox$hfArticleSubmitComment" id="hfArticleSubmitComment">
+        <input type="hidden" name="ctl00$scm6MainContent$ucArticleToolbox$hfArticleSubmitLetter" id="hfArticleSubmitLetter">
+        
+
+
+        <li id="scm6MainContent_ucArticleToolbox_tbFeaturePDF" class="firstLI">
+            
+             <a id="hyphlPDFlink" class="tool_pdf linkPDF">PDF</a>
+        </li>
+        <li id="scm6MainContent_ucArticleToolbox_tbFeaturePrint" class="firstLI hide"> 
+            <a class="tool_print printArticle" id="printTool" alt="Print">Print</a> <!--class="printMenu"-->
+        </li>
+        <li id="scm6MainContent_ucArticleToolbox_tbFeatureEmail">
+            <a class="tool_email sendEmail" alt="Email">Email</a>
+            
+<style>
+#emailForm
+{
+    background-color: #eee;
+    border:none;
+    padding:10px;
+    margin:10px;
+    margin-left:0px;
+}
+#emailForm h3
+{
+    margin:0px;
+    padding:0px 0px 10px 0px;
+    font-size:135%;
+}
+.emailRow
+{
+    width:100%;
+    overflow:hidden;
+    padding-bottom:5px;
+    margin:10px 0px;
+}
+.emailRow label
+{
+    width:140px;
+    float:left;
+    color: #000;
+    font-weight:bold;
+    padding-top:5px;
+    
+}
+.emailRow input[type="text"], .emailRow textarea
+{
+    width:250px;
+    padding:5px;
+    border:1px solid #ccc;
+}
+
+#txtEmailSubject, #txtEmailMessage
+{
+    width:540px;
+}
+#txtEmailMessage
+{
+    min-height:120px;
+    overflow:auto;
+    border:1px solid #ccc;
+    padding:5px;
+}
+
+.tooltipEmail
+{
+    height:16px;
+    font-size:11px;
+    color: #8A1919;
+    display:none;
+    float:none;
+    background-repeat:no-repeat;
+    background-position:left center;
+    padding:0px 20px;
+    padding-left:142px;
+}
+
+#emailMessageInfo
+{
+    height:16px;
+    font-size:11px;
+    float:none;
+    padding:0px 20px;
+    padding-left:142px;
+}
+    
+</style>
+
+<script type="text/javascript">
+    function setSubjectText() {
+        txtEmailSubject.value = txtSenderName.value + hfSubjectEnd.value
+    }
+</script>
+
+
+        </li>
+
+        <li id="scm6MainContent_ucArticleToolbox_tbFeatureShareSocialNetwork">
+         
+            
+            <div class="addthis_toolbox addthis_default_style ">
+                <a href="http://www.addthis.com/bookmark.php?v=250&pubid=ra-4ded16a473f47102" alt="Share" class="tool_share addthis_button_compact at300m"><span class="at16nc at300bs at15nc at15t_compact at16t_compact"><span class="at_a11y">More Sharing Services</span></span>Share</a>
+            <div class="atclear"></div></div>
+        </li>
+
+        <li id="scm6MainContent_ucArticleToolbox_tbFeatureGetCitation"><a class="tool_citation getCitation" alt="Get Citation">Get Citation</a>
+            
+<script type="text/javascript">
+    $(document).ready(function () {
+        var source = $('.mastHead').find('.siteHeader').children('.siteLogo').find('img').clone();
+        $('.logoBrand').append(source);
+    });
+</script>
+
+
+
+
+
+        </li>
+
+        <li id="scm6MainContent_ucArticleToolbox_tbFeatureReprintsAndPermissions"></li>
+      
+
+        <li id="scm6MainContent_ucArticleToolbox_tbFeatureArticleAlerts">
+            <a id="scm6MainContent_ucArticleToolbox_alertTool" class="tool_alerts showAlerts" alt="Article Alerts">Article Alerts</a>
+            
+<div class="alertPopupDialog">
+    <div id="progressBar" style="font-family:Verdana;font-weight:bold;font-size:13pt;" class="userAlertPopupProgressBar hide">
+        <img src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/ajax-loader.gif" alt="Please Wait...">
+        Processing your request... Please Wait.
+    </div>
+    <div id="scm6MainContent_ucArticleToolbox_ucUserAlerts_divMessage" class="alertPopupMessage">
+    
+    </div>
+    <br>
+    <div id="scm6MainContent_ucArticleToolbox_ucUserAlerts_divLogin">
+        <div id="scm6MainContent_ucArticleToolbox_ucUserAlerts_divCreateProfile">
+            <a id="createAccountExt" class="personalProfile" style="color:#336699;font-weight:bold;">Create a Personal Profile</a>
+        </div>
+    </div>
+    <div id="scm6MainContent_ucArticleToolbox_ucUserAlerts_divEmailConfirmation" class="UserAlertEmailConfirmation">
+        <input type="text" id="txtUserAlertEmailAddress" class="editableField" onblur="getNewEmailAddress(this);">
+        <button id="btnConfirm" class="button" clientidmode="Static" onclick="callBackUserAlert();">Confirm</button>
+        <input type="hidden" name="ctl00$scm6MainContent$ucArticleToolbox$ucUserAlerts$hfOriginalEmailAddress" id="hfOriginalEmailAddress">
+    </div>
+</div>
+
+        </li> 
+                             
+       
+
+    
+        
+            
+    </ul>
+
+                        </div>
+                        <div class="resetAfter">
+                        </div>
+                    </div>
+                </div>
+                <!--Portlet Content Holder Starts-->
+                <div class="portletContentHolder">
+                    <div class="portletWrapper clearfix">
+                        <!--toolbox message starts here-->
+                        <!--External Links Ends-->
+                        <div class="relatedContentHeading" id="noMove">
+                            <h2>
+                                Related Content</h2>
+                            <p>
+                                Customize your page view by dragging &amp; repositioning the boxes below.
+                            </p>
+                        </div>
+                        <!-- PortletContainer: Collection of Portlets -->
+                        <div class="portletContainer ui-sortable">
+                            <!--Portlet Starts-->
+                            <div class="portlet" id="item1">
+                                
+<div class="configure">
+    
+    <div id="scm6MainContent_ucRelatedArticles_widgetTitle" class="portlet-title"><h3><span>Related Journal Articles</span></h3></div>
+    <span class="moveicon"></span>
+    <span id="articleWidgetConfigureIcon" class="configureicon"></span>
+    <div class="clearAll"></div>
+</div>
+<div class="portlet-content">
+    <div id="scm6MainContent_ucRelatedArticles_divFilterTop">
+        <a id="filterRelatedArticles" class="selected filterTitle">Filter By Topic &gt;</a>
+        <div class="filterTermsArticle" style="display:none;">
+            <a id="0" class="filterLinkArticleJQ">All Articles</a>
+        </div>
+    </div>
+    <div class="contentFilter">
+        
+                <ul class="filterTermsArticle">
+            
+                    <li><a id="15002256" class="filterLinkArticleJQ">Networks</a></li>
+            
+                    <li><a id="15003165" class="filterLinkArticleJQ">Simulations</a></li>
+            
+                    <li><a id="15003680" class="filterLinkArticleJQ">Video</a></li>
+            
+                    <li><a id="15003766" class="filterLinkArticleJQ">Web services</a></li>
+            
+                </ul>
+            
+    </div>
+    
+    <input type="hidden" name="ctl00$scm6MainContent$ucRelatedArticles$hdnCurrentSectionID" id="scm6MainContent_ucRelatedArticles_hdnCurrentSectionID" value="0">
+    <input type="hidden" name="ctl00$scm6MainContent$ucRelatedArticles$hdnCurrentArticleID" id="scm6MainContent_ucRelatedArticles_hdnCurrentArticleID" value="812508">
+       
+    <div id="scm6MainContent_ucRelatedArticles_divArticleContent" class="relatedArticlesContent"><div class="portletContentSection"><div class="contentTitle"><a id="1816778" href="http://opticalengineering.spiedigitallibrary.org/article.aspx?articleid=1816778&journalid=92">Strapdown fiber optic gyrocompass using adaptive network-based fuzzy inference system</a></div><div class="contentInfo">Optical Engineering (January 1, 2014)</div></div><div class="portletContentSection"><div class="contentTitle"><a id="1099362" href="http://electronicimaging.spiedigitallibrary.org/article.aspx?articleid=1099362&journalid=94">Efficient allocation of packet-level forward error correction in video streaming over the Internet</a></div><div class="contentInfo">J. Electronic Imaging (April 1, 2007)</div></div><div class="portletContentSection"><div class="contentTitle"><a id="1102001" href="http://opticalengineering.spiedigitallibrary.org/article.aspx?articleid=1102001&journalid=92">Error resilient texture coding scheme for wireless Video transmission based on coefficient sampling and interleaving</a></div><div class="contentInfo">Optical Engineering (December 1, 2005)</div></div><div class="portletContentSection viewMoreArticlesSection"><div class="contentTitle"><a id="1100547" href="http://opticalengineering.spiedigitallibrary.org/article.aspx?articleid=1100547&journalid=92">Grooving on Technology</a></div><div class="contentInfo">Optical Engineering (October 1, 2004)</div></div><div class="portletContentSection viewMoreArticlesSection"><div class="contentTitle"><a id="1097683" href="http://electronicimaging.spiedigitallibrary.org/article.aspx?articleid=1097683&journalid=94">MPEG-compliant joint source/channel coding using discrete cosine transform and substream scheduling for visual communication over packet networks</a></div><div class="contentInfo">J. Electronic Imaging (January 1, 2001)</div></div></div>
+
+    
+    <div id="divViewMore" class="relatedArticlesViewMore widgetViewMore" display="block">
+        <a class="selected" id="aShowMoreArticles">[+] View More</a>
+    </div>
+
+     
+
+</div>
+                            </div>
+                            <!--Portlet Ends-->
+                            <!--Portlet Starts-->
+                            <div class="portlet" id="item12">
+                                
+<div class="configure">
+    
+
+    <div id="scm6MainContent_ucRelatedProceedings_widgetTitle" class="portlet-title"><h3><span>Related Proceedings Articles</span></h3></div>
+    <span class="moveicon"></span>
+    <span id="articleWidgetConfigureIcon" class="configureicon"></span>
+    <div class="clearAll"></div>
+</div>
+<div class="portlet-content">
+    <div id="scm6MainContent_ucRelatedProceedings_divFilterTop">
+        <a id="filterRelatedProceedings" class="selected filterTitle">Filter By Topic &gt;</a>
+        <div class="filterTermsProceedings" style="display:none;">
+            <a id="0" class="filterLinkPArticleJQ">All Proceedings</a>
+        </div>
+    </div>
+    <div class="contentFilter">
+        
+                <ul class="filterTermsProceedings">
+            
+                    <li><a id="15002256" class="filterLinkPArticleJQ">Networks</a></li>
+            
+                    <li><a id="15003165" class="filterLinkPArticleJQ">Simulations</a></li>
+            
+                    <li><a id="15003680" class="filterLinkPArticleJQ">Video</a></li>
+            
+                    <li><a id="15003766" class="filterLinkPArticleJQ">Web services</a></li>
+            
+                </ul>
+            
+    </div>
+    
+    <input type="hidden" name="ctl00$scm6MainContent$ucRelatedProceedings$hdnCurrentPSectionID" id="scm6MainContent_ucRelatedProceedings_hdnCurrentPSectionID" value="0">
+    <input type="hidden" name="ctl00$scm6MainContent$ucRelatedProceedings$hdnCurrentPArticleID" id="scm6MainContent_ucRelatedProceedings_hdnCurrentPArticleID" value="812508">
+       
+    <div id="scm6MainContent_ucRelatedProceedings_divArticleContent" class="relatedArticlesProceedingContent"><div class="portletContentSection"><div class="contentTitle"><a id="1737687" href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=1737687">
+Design of a data transmission system based on gigabit ethernet
+</a></div><div class="contentInfo">Proceedings of SPIE (September 11 2013)</div></div><div class="portletContentSection"><div class="contentTitle"><a id="1668579" href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=1668579">
+Simulation and analysis of video stream transmission based on decodable frame ratio model in wireless network
+</a></div><div class="contentInfo">Proceedings of SPIE (March 14 2013)</div></div><div class="portletContentSection"><div class="contentTitle"><a id="1354512" href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=1354512">Wide-area littoral discreet observation: success at the tactical edge</a></div><div class="contentInfo">Proceedings of SPIE (May 01 2012)</div></div><div class="portletContentSection viewMoreArticlesSection"><div class="contentTitle"><a id="1341798" href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=1341798">A distributed multichannel demand-adaptive P2P VoD system with optimized caching and neighbor-selection</a></div><div class="contentInfo">Proceedings of SPIE (September 08 2011)</div></div><div class="portletContentSection viewMoreArticlesSection"><div class="contentTitle"><a id="744926" href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=744926">SOA approach to battle command: simulation interoperability</a></div><div class="contentInfo">Proceedings of SPIE (April 23 2010)</div></div></div>
+
+    
+    <div id="divViewMore" class="relatedArticlesViewMore widgetViewMore" display="block">
+        <a class="selected" id="aShowMoreArticles">[+] View More</a>
+    </div>
+
+</div>
+                            </div>
+                            <!--Portlet Ends-->
+                            <!--Portlet Starts-->
+                            <div class="portlet" id="item2">
+                                
+
+<div class="configure">
+    <script type="text/javascript" language="javascript">
+       <!--
+        var VIEW_MORE_TEXT_SECTIONS = '[+] View More'
+        var HIDE_TEXT_SECTIONS = '[-] View Fewer'
+        var COOKIE_NAME_SECTIONS = 'relatedSectionsWidgetViewMore'
+        var VIEW_MORE_SECTION_CLASS_SECTIONS = '.viewMoreSectionsSection'
+        var CONTENT_SECTION_CLASS_SECTIONS = '.relatedSectionsContent'
+        var VIEW_MORE_LINK_ID_SECTIONS = '#aShowMoreSections'
+
+        function SectionDatafromServer(args) {
+            var obj = JSON.parse(args, "");
+            // alert('SectionDatafromServer');
+            $(CONTENT_SECTION_CLASS_SECTIONS).html(obj._ContentHTML);
+
+            //run the function that checks the state of View More
+            restoreViewMoreSectionsOnLoad();
+        }
+
+        // function that maintains View More state, from a cookie
+        function checkViewMoreSectionsCookie() {
+            // fetch the cookie value (View More open or not)
+            if (!$.cookie(COOKIE_NAME_SECTIONS)) return 0;
+            var cookie = $.cookie(COOKIE_NAME_SECTIONS);
+            //alert('check cookie Section: ' + cookie);
+            return cookie;
+        }
+
+        function expandViewMoreSections() {
+            //show the div
+            $(VIEW_MORE_SECTION_CLASS_SECTIONS).show();
+            //change the link text
+            $(VIEW_MORE_LINK_ID_SECTIONS).text(HIDE_TEXT_SECTIONS);
+            // alert('expand Sections: ' + $(VIEW_MORE_LINK_ID).text());
+            // Set the cookie to 1 for expanded
+            $.cookie(COOKIE_NAME_SECTIONS, '1', { expiresAt: new Date(2100, 1, 1) });
+        }
+
+        function collapseViewMoreSections() {
+            //hide the div
+            $(VIEW_MORE_SECTION_CLASS_SECTIONS).hide();
+            //change the link text
+            $(VIEW_MORE_LINK_ID_SECTIONS).text(VIEW_MORE_TEXT_SECTIONS);
+            // alert('collapse Sections: ' + $(VIEW_MORE_LINK_ID).text());
+            // Set the cookie to 0 for collapsed
+            $.cookie(COOKIE_NAME_SECTIONS, '0', { expiresAt: new Date(2100, 1, 1) });
+        }
+
+        function restoreViewMoreSectionsOnLoad() {
+            //  alert('restore Sections');
+            switch (checkViewMoreSectionsCookie()) {
+                case '1': expandViewMoreSections();
+                    break;
+                default: collapseViewMoreSections();
+            }
+        }
+
+        function switchViewMoreSectionsOnLoad() {
+            //    alert('switch Sections');
+            switch (checkViewMoreSectionsCookie()) {
+                case '0': expandViewMoreSections();
+                    break;
+                default: collapseViewMoreSections();
+            }
+        }
+
+        $(document).ready(function () {
+            $('#aShowMoreSections').click(function () {
+                switchViewMoreSectionsOnLoad();
+            })
+
+            //on initial load, check to see if expanded or collapsed
+            restoreViewMoreSectionsOnLoad();
+        })
+        //-->
+    </script>
+   
+   <div class="portlet-title"><h3><span>Related Book Chapters</span></h3></div> 
+    <span class="moveicon"></span>
+    <span class="configureicon"></span>
+    <div class="clearAll"></div>
+</div>
+<div class="portlet-content">
+    <div id="scm6MainContent_ucRelatedBooks_divFilterTop">
+        <a id="filterRelatedSections" class="selected filterTitle">Filter By Topic &gt;</a>
+        <div class="filterTermsSection" style="display:none;">
+            <a id="0" class="filterLinkSection">All Sections</a>
+        </div>
+    </div>
+    <div class="contentFilter">
+        
+                <ul class="filterTermsSection">
+            
+                    <li><a id="15002256" class="filterLinkSection">Networks</a></li>
+            
+                    <li><a id="15003165" class="filterLinkSection">Simulations</a></li>
+            
+                    <li><a id="15003680" class="filterLinkSection">Video</a></li>
+            
+                </ul>
+            
+    </div>
+    <div class="relatedSectionContent">
+        <input type="hidden" name="ctl00$scm6MainContent$ucRelatedBooks$hdnCurrentSectionID" id="scm6MainContent_ucRelatedBooks_hdnCurrentSectionID" value="0">
+        <input type="hidden" name="ctl00$scm6MainContent$ucRelatedBooks$hdnCurrentArticleID" id="scm6MainContent_ucRelatedBooks_hdnCurrentArticleID" value="812508">
+        <div id="scm6MainContent_ucRelatedBooks_divSectionContent" class="relatedSectionsContent"><div class="portletContentSection"><div class="contentInfo"><a href="http://ebooks.spiedigitallibrary.org/content.aspx?bookid=102&sectionid=31570652" id="aLink">Amplifier Analysis and Design Concepts</a></div><div class="contentInfo">Digital and Analog Fiber Optic Communications for CATV and FTTx Applications &gt;&nbsp;Chapter 11. Part 3 RF and Control Concepts&gt;</div></div><div class="portletContentSection"><div class="contentInfo"><a href="http://ebooks.spiedigitallibrary.org/content.aspx?bookid=162&sectionid=31564856" id="aLink">An Integrated Approach for Biological Discovery</a></div><div class="contentInfo">An Engineering Introduction to Biotechnology&gt;&nbsp;Chapter 4. Part I Introduction to Biology&gt;</div></div><div class="portletContentSection"><div class="contentInfo"><a href="http://ebooks.spiedigitallibrary.org/content.aspx?bookid=102&sectionid=31570668" id="aLink">Transceivers and Tunable Wavelength Transceiver Modules</a></div><div class="contentInfo">Digital and Analog Fiber Optic Communications for CATV and FTTx Applications &gt;&nbsp;Chapter 19. Part 5 Digital Transceivers Performance&gt;</div></div><div class="portletContentSection viewMoreSectionsSection" style="display: none;"><div class="contentInfo"><a href="http://ebooks.spiedigitallibrary.org/content.aspx?bookid=101&sectionid=31561793" id="aLink">Toward Photonic Integrated Circuit All-Optical Signal Processing Based on Kerr Nonlinearities</a></div><div class="contentInfo">Advances in Information Optics and Photonics &gt;&nbsp;Chapter 31. Communications and Networks&gt;</div></div><div class="portletContentSection viewMoreSectionsSection" style="display: none;"><div class="contentInfo"><a href="http://ebooks.spiedigitallibrary.org/content.aspx?bookid=101&sectionid=31561795" id="aLink">Ultrafast Photonic Processing Applied to Photonic Networks</a></div><div class="contentInfo">Advances in Information Optics and Photonics &gt;&nbsp;Chapter 32. Communications and Networks&gt;</div></div></div>
+    </div>
+   
+     <div id="scm6MainContent_ucRelatedBooks_divViewMore" class="relatedArticlesViewMore" display="block">
+        <a style="color: #006699;" class="selected" id="aShowMoreSections">[+] View More</a>
+    </div>
+</div>
+                            </div>
+                            <!--Portlet Ends-->
+                            <!-- Portlet: Starts -->
+                            <div class="portlet" id="item4">
+                                
+<div class="configure"> 
+<script type="text/javascript" language="javascript">
+    $(document).ready(function () {
+        // Tracking category clicks : Added by Santosh K on 05/11/11
+        $('.widgetCollection').click(function () {
+            var value = 'category id = ' + $(this).attr('id');
+            var key = 'WidgetRelatedCollections';
+            var session = this.UserSessionItem;
+            var action = this.ActionType;
+            session = new UserSessionItem("o5dnrfggb3fqm1pkzormbuvp", 0, 0);
+            action = new ActionType(1, key);
+            doTracking(action, value.toString(), "3/13/2014 1:00:49 PM", session, (window.location).toString());
+        });
+    });
+    </script>
+    <div id="scm6MainContent_ucRelatedCollections_widgetTitle" class="portlet-title"><h3><span>Topic Collections</span></h3></div>
+    <span class="moveicon"></span>
+    <span class="configureicon"></span>
+    <div class="clearAll"></div>
+</div>
+<div class="portlet-content">
+	<div class="portletContentSection">
+        <ul>
+                     
+                       <li><a href="http://spiedigitallibrary.org/collection.aspx?categoryid=6146">Communication &amp; Information Technologies</a></li>
+                         
+                       <li><a href="http://spiedigitallibrary.org/collection.aspx?categoryid=6152">Networks</a></li>
+            
+        </ul>
+    </div>
+</div>
+                            </div>
+                            <!-- Portlet: Ends-->
+                            <!-- Portlet: Starts -->
+                            <div class="portlet thirdParty" id="item11">
+                                
+                            </div>
+                            <!--Portlet Ends-->
+                        </div>
+                        <div>
+                            
+<div class="configure">
+    
+</div>
+
+
+
+                        </div>
+                        <!--Advertisement Portlet Starts-->
+                        <div class="adPortlet">
+                            <div class="addHead">
+                                <small>Advertisement</small></div>
+                            <div id="scm6MainContent_SPIEAdSelfServe">
+	<div class="selfServe">
+		<a href="http://www.optimaxsi.com/capabilities/"><img alt="" width="300" height="250" src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/Optimax Ad 2014.jpg"></a>
+<p></p>
+	</div>
+</div>
+                        </div>
+                        <!--Advertisement Portlet Ends-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="displaypopup" class="expMsg" style="font-size: 10pt; display: none;">
+        <b>You do not have access to this content.</b><br>
+        <br>
+        You either do not have a subscription or your subscription has expired. <a style="color: Blue;
+            font: Bold;" href="http://scm6devstore.silverchair.com/">Click here</a> to Renew
+        Now
+    </div>
+    <div id="append">
+    </div>
+
+        
+ <div class="journalFooter">
+    
+   
+    <div id="footerNav1" class="eqcolumn left column" style="min-height: 153px;">
+        <!--<h2><span id="journalFooter_lblJournal"></span></h2>-->
+        <ul>
+        <h6>Site Map</h6>
+            <li><a href="http://spiedigitallibrary.org/">HOME</a></li>
+            <li id="journalFooter_liProceedings"><a href="http://proceedings.spiedigitallibrary.org/ConferenceProceedings.aspx" id="journalFooter_lnkProceedings">PROCEEDINGS</a></li>
+            <li id="journalFooter_liJournals"><a href="http://journals.spiedigitallibrary.org/journals.aspx" id="journalFooter_lnkJournals">JOURNALS</a></li>
+            <li id="journalFooter_liBooks"><a href="http://ebooks.spiedigitallibrary.org/books.aspx" id="journalFooter_lnkBooks">eBOOKS</a></li>
+            
+            <li id="journalFooter_liTopicCollections"><a href="http://spiedigitallibrary.org/collections.aspx" id="journalFooter_aTopicClollection">TOPIC COLLECTIONS</a></li>
+        </ul>
+    </div>
+     <div id="footerNav3" class="eqcolumn left column" style="min-height: 153px;">
+        <h6>Services</h6>
+        <ul>
+            <li><a href="http://spiedigitallibrary.org/store/home.aspx">Subscribe</a></li>
+            <li><a id="journalFooter_aAlerts" class="showAlerts footeralert">Alerts</a></li>
+            <li><a href="http://proceedings.spiedigitallibrary.org/ss/librarians.aspx">Information for Librarians</a></li>
+            <li><a href="http://proceedings.spiedigitallibrary.org/ss/PrivacyPolicy.aspx">Privacy Policy</a></li>
+            <li><a href="http://proceedings.spiedigitallibrary.org/ss/TermsOfUse.aspx">Terms Of Use</a></li>
+            <li><a href="http://proceedings.spiedigitallibrary.org/public/contact.aspx" id="journalFooter_A4">Contact Us</a></li>
+            <li><a href="http://proceedings.spiedigitallibrary.org/ss/about.aspx" id="journalFooter_A5">About the Digital Library</a></li>
+            
+            
+            
+            
+            
+            
+        </ul>
+    </div>
+    
+   
+    <div id="footerNav4" class="eqcolumn left column" style="min-height: 153px;">
+        <h6>Other Resources</h6>
+        <ul>
+            <li id="journalFooter_liSPIEOrg" class="indent"><a href="http://www.spie.org/" id="journalFooter_A6" target="_blank">SPIE.org</a></li>
+            <li class="indent"><a target="_blank" href="http://spie.org/x1720.xml">SPIE Membership</a></li>
+            <li class="indent"><a target="_blank" href="http://spie.org/x37239.xml">SPIE Career Center</a></li>
+        </ul>
+    </div>
+
+     <div id="footerNav5" class="eqcolumn left column" style="min-height: 153px;">
+        <h6>Information for Authors</h6>
+        <ul>
+            <li class="indent"><a target="_blank" href="http://spie.org/x659.xml">Books</a></li>
+            <li class="indent"><a target="_blank" href="http://spie.org/x576.xml">Journals</a></li>
+            <li class="indent"><a target="_blank" href="http://spie.org/x2563.xml">Proceedings</a></li>
+            <li class="indent"><a target="_blank" href="http://spie.org/x1125.xml">Reprint Permissions</a></li>
+            <li class="indent"><a target="_blank" href="http://spie.org/x34034.xml">About Open Access</a></li>
+            <input type="hidden" name="ctl00$journalFooter$hfFooterPersonalUserIsLoggedIn" id="journalFooter_hfFooterPersonalUserIsLoggedIn" value="0">
+            <li class="indent white">
+             <a href="http://www.projectcounter.org/" target="_blank"><img src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/counter_compliant.png"></a>
+            <a href="http://www.crossref.org/" target="_blank"><img src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/citation_linking_graphic.png"></a>&nbsp;&nbsp;
+           
+            </li>
+        </ul>
+    </div>
+    
+
+
+    <div class="clearAll"></div>
+</div>
+<script type="text/javascript">
+    $(window).load(function () {
+        // /JS/scm6.global.js
+        var footerColumns = equalHeight($('.journalFooter .column'));
+    });
+</script>
+
+        <div class="Footer">
+            
+
+<div class="siteFooter">
+    <a href="http://spie.org/"><span style="background:url(/Images/buttons/logo_SPIE_footer.png) no-repeat 0 0;width:91px;height:25px;float:left;"></span></a>
+    <div class="copyright">SPIE © 1962 - 2014. All Rights Reserved.</div>
+    <a href="http://www.silverchair.com/" target="_blank"><span style="background:url(/Images/backgrounds/logo_silverchair_footer.png) no-repeat 0 15px;width:150px;height:45px;float:right;margin-top:-14px;"></span></a>
+   <div class="clearAll"></div>
+   
+</div>
+        </div>
+        
+        
+        <div class="popupDialog" id="loginServicesDialog" style="display:none;">
+            <p>
+                
+                    <span class="bold">Shibboleth</span> is access management services that provide single sign-on to protected resources. It replace the multiple user names and passwords necessary to access subscription-based content with a single user name and password that can be entered once per session. It operates independently of a user's location or IP address. If your institution uses Shibboleth authentication, please contact your site administrator to receive your user name and password.
+                
+            </p>
+        </div>
+    </div>
+    <!--Global Page Content Ends-->
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("scm6MainContent_globalSignIn1_cvLogin"), document.getElementById("scm6MainContent_PurchaseSubscription1_cvUseTokens"), document.getElementById("globalSignIn11_cvLogin"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var scm6MainContent_globalSignIn1_cvLogin = document.all ? document.all["scm6MainContent_globalSignIn1_cvLogin"] : document.getElementById("scm6MainContent_globalSignIn1_cvLogin");
+scm6MainContent_globalSignIn1_cvLogin.display = "Dynamic";
+scm6MainContent_globalSignIn1_cvLogin.validationGroup = "scm6MainContent_globalSignIn1_vgLogin";
+scm6MainContent_globalSignIn1_cvLogin.evaluationfunction = "CustomValidatorEvaluateIsValid";
+scm6MainContent_globalSignIn1_cvLogin.clientvalidationfunction = "scm6MainContent_globalSignIn1_ClientValidate";
+var scm6MainContent_PurchaseSubscription1_cvUseTokens = document.all ? document.all["scm6MainContent_PurchaseSubscription1_cvUseTokens"] : document.getElementById("scm6MainContent_PurchaseSubscription1_cvUseTokens");
+scm6MainContent_PurchaseSubscription1_cvUseTokens.validationGroup = "USE_TOKENS";
+scm6MainContent_PurchaseSubscription1_cvUseTokens.evaluationfunction = "CustomValidatorEvaluateIsValid";
+var globalSignIn11_cvLogin = document.all ? document.all["globalSignIn11_cvLogin"] : document.getElementById("globalSignIn11_cvLogin");
+globalSignIn11_cvLogin.display = "Dynamic";
+globalSignIn11_cvLogin.validationGroup = "globalSignIn11_vgLogin";
+globalSignIn11_cvLogin.evaluationfunction = "CustomValidatorEvaluateIsValid";
+globalSignIn11_cvLogin.clientvalidationfunction = "globalSignIn11_ClientValidate";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("scm6ScriptManager_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+WebForm_InitCallback();
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('scm6MainContent_globalSignIn1_cvLogin').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('scm6MainContent_globalSignIn1_cvLogin'));
+}
+
+document.getElementById('scm6MainContent_PurchaseSubscription1_cvUseTokens').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('scm6MainContent_PurchaseSubscription1_cvUseTokens'));
+}
+
+document.getElementById('globalSignIn11_cvLogin').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('globalSignIn11_cvLogin'));
+}
+//]]>
+</script>
+</form>
+    <script type="text/javascript" src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/saved_resource(2)"></script>
+    
+    
+    <!--Keep Tracks of the tallest column-->
+    <script src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/SCM6.StatsMaster.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/addthis_widget.js"></script><div id="_atssh" style="visibility: hidden; height: 1px; width: 1px; position: absolute; z-index: 100000;"><iframe id="_atssh575" title="AddThis utility frame" style="height: 1px; width: 1px; position: absolute; z-index: 100000; border: 0px; left: 0px; top: 0px;" src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/sh151.html"></iframe></div><script type="text/javascript" src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/core125.js"></script>
+    <script language="JavaScript" type="text/javascript" src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/BrightcoveExperiences.js"></script>
+    <script type="text/javascript">
+        var addthis_offset_top = 470;
+        var addthis_offset_left = 1000;
+        var addthis_config = { "data_track_clickback": true,
+            services_compact: "facebook, twitter, linkedin, citeulike",
+            services_expanded: "facebook, twitter, linkedin, citeulike",
+            services_exclude: "email"
+        };
+        // Tracking share clicks
+        addthis.addEventListener('addthis.menu.share', eventhandler);
+        function eventhandler(evt) {
+            var value = evt.data.service;
+            var key = 'Share';
+            this.UserSessionItem = new UserSessionItem("o5dnrfggb3fqm1pkzormbuvp", 0, 0);
+            this.ActionType = new ActionType(1, key);
+            doTracking(this.ActionType, value.toString(), "3/13/2014 1:00:49 PM", this.UserSessionItem, (window.location).toString());
+        }
+    </script>
+    <script type="text/javascript">
+        var whichPanel = "wrapper";
+        var mobileFireEvent = "article";
+        var count = 0;
+        var emailUserAlert = "";
+        var emailOnPopupChanged = false;
+        var JumpId = '';
+        $(document).ready(function () {
+
+            // tracking content references
+            $('.crsRef').click(function () {
+                var tab = $(this).context.innerText;
+                if (!tab) {
+                    tab = $(this).context.textContent;
+                }
+                var key = 'CrossReferenceLink'
+                //popuate the input object and call the pagebase method to update the database
+                this.UserSessionItem = new UserSessionItem("o5dnrfggb3fqm1pkzormbuvp", 0, 0);
+                this.ActionType = new ActionType(1, key);
+                doTracking(this.ActionType, tab.toString(), "3/13/2014 1:00:49 PM", this.UserSessionItem, (window.location).toString());
+            });
+
+            $('.pubmedLink').click(function () {
+                var tab = $(this).attr('href');
+                var key = 'CrossReferenceLink';
+                this.UserSessionItem = new UserSessionItem("o5dnrfggb3fqm1pkzormbuvp", 0, 0);
+                this.ActionType = new ActionType(1, key);
+                doTracking(this.ActionType, tab.toString(), "3/13/2014 1:00:49 PM", this.UserSessionItem, (window.location).toString());
+            });
+
+            $('#txtUserAlertEmailAddress').val($('#hfOriginalEmailAddress').val());
+
+            var browserversion = $.browser;
+
+            if (browserversion.mozilla && parseInt(browserversion.version) < 2) {
+                $('.saveMyStuff').click(function () {
+                    // Don't allow saving in PreviewMode
+                    if (previewMode) {
+                        alert('Saving is disabled in preview mode.');
+                    } else {
+                        var _id = this.id;
+                        AddItemstoMyStuff(_id);
+                    }
+                });
+            }
+
+            // track toolbox client clicks
+            $('.rightpopup li a').click(function () {
+                var id = $(this).attr('class');
+                var value = id.toString() + ' is Clicked';
+                var key = 'ToolBox';
+                //popuate the input object and call the pagebase method to update the database
+                this.UserSessionItem = new UserSessionItem("o5dnrfggb3fqm1pkzormbuvp", 0, "30");
+                this.ActionType = new ActionType(1, key);
+                if (id == 'tool_pdf linkPDF') {
+                    doTracking(this.ActionType, value.toString(), "3/13/2014 1:00:49 PM", this.UserSessionItem, ActionURL, "sync", "0", "0");
+                } else {
+
+                    doTracking(this.ActionType, value.toString(), "3/13/2014 1:00:49 PM", this.UserSessionItem, ActionURL);
+                }
+            });
+
+            $(".tabtracking").click(function () {
+                var key = "Tabs";
+                var tab = $(this).context.innerText;
+                if (!tab) {
+                    tab = $(this).context.textContent;
+                }
+                var value = tab + " was clicked ";
+                this.ActionType = new ActionType(1, key);
+                this.UserSessionItem = new UserSessionItem("o5dnrfggb3fqm1pkzormbuvp", 0, 0);
+                doTracking(this.ActionType, value.toString(), "3/13/2014 1:00:49 PM", this.UserSessionItem, ActionURL);
+            });
+            $(".jumpLinks a").click(function () {
+                var thisLink = $(this).index();
+                var tab = $(this).context.innerText;
+                if (!tab) {
+                    tab = $(this).context.textContent;
+                }
+                var imageClicked = tab + " was clicked ";
+                this.ActionType = new ActionType(1, tab);
+                this.UserSessionItem = new UserSessionItem("o5dnrfggb3fqm1pkzormbuvp", 0, 0)
+                doTracking(this.ActionType, imageClicked.toString(), "3/13/2014 1:00:49 PM", this.UserSessionItem, ActionURL);
+            });
+            $(".popUpTable").click(function () {
+                var thisLink = $(this).index();
+                var tab = $(this).context.innerText;
+                if (!tab) {
+                    tab = $(this).context.textContent;
+                }
+                var imageClicked = tab + " was clicked ";
+                this.ActionType = new ActionType(1, tab);
+                this.UserSessionItem = new UserSessionItem("o5dnrfggb3fqm1pkzormbuvp", 0, 0)
+                doTracking(this.ActionType, imageClicked.toString(), "3/13/2014 1:00:49 PM", this.UserSessionItem, ActionURL);
+
+            });
+            $(".saveMyStuff").click(function () {
+                // Don't track a save to my stuff if this is in preview mode (because saving to my stuff isn't allowed in preview mode)
+                if (!previewMode) {
+                    var thisLink = $(this).index();
+                    var tab = $(this).context.innerText;
+                    if (!tab) {
+                        tab = $(this).context.textContent;
+                    }
+                    var id = $(this).attr('id');
+                    var imageClicked = tab + " was clicked with id = " + id;
+                    this.ActionType = new ActionType(1, tab);
+                    this.UserSessionItem = new UserSessionItem("o5dnrfggb3fqm1pkzormbuvp", 0, 0)
+                    doTracking(this.ActionFilterType, imageClicked.toString(), "3/13/2014 1:00:49 PM", this.UserSessionItem, ActionURL);
+                }
+            });
+        });
+
+        function detailsHandler(href) {
+            var hiddenField = document.getElementById('hfArticleId').value;
+            //get any other hidden fields and append them.
+            href = href + "&articleid=" + hiddenField;
+            //then redirect to the revised url
+            window.location = href;
+
+        }
+
+        function displaypopup() {
+
+            // show the div content for popup
+            $('#displaypopup').attr("style", "displaylock;font-family:Arial;font-weightold;font-size:10pt;");
+
+            $("#displaypopup").dialog({
+                position: 'center',
+                modal: true,
+                height: 150,
+                width: 525,
+                dialogClass: 'boxshadow',
+                closeOnEscape: false,
+                overlay: { opacity: 0.5, background: 'gray' },
+                close: function (evnt, args) {
+                }
+
+            });
+
+        }
+        //******************USER ALERT RELATED FUNCTIONS******************
+        // User Alerts Callback
+        function displayAlertMessage(msg) {
+            $(".alertPopupMessage").html(msg);
+
+            // Hide Textbox and Confirm Button?
+            $('.UserAlertEmailConfirmation').hide();
+
+            // hide the progress bar after the message is displayed.
+            $('.userAlertPopupProgressBar').hide();
+        }
+
+        //.........................
+        // Trim a string.
+        function trim(stringToTrim) {
+            return stringToTrim.replace(/^\s+|\s+$/g, "");
+        }
+        //.........................
+        // Capture the new/Changed Email Address when and if the user changes it on User Alerts popup dialog.
+        function getNewEmailAddress(o) {
+            emailOnPopupChanged = true;
+            emailUserAlert = o.value;
+        }
+        //.........................
+        // function that is called for User Alerts Callback
+        function callBackUserAlert() {
+            // For some if user changed/update value in txtUserAlertEmailAddress field, the new  value was not reflected;
+            // As a result, getNewEmailAddress() function is called onblur() of txtUserAlertEmailAddress(widgetUserAlerts user control).
+            // Local global variable is set to the new value in onblur().
+
+            // get the email address.
+            // if user entered a new email address or updated an existing one, get the value from the local variable.
+            // else get it from the textbox itselft.
+            var email;
+            email = emailOnPopupChanged ? emailUserAlert : $('#txtUserAlertEmailAddress').val();
+
+            if (emailOnPopupChanged) {
+                emailOnPopupChanged = false;
+            }
+
+            var emailPattern = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
+
+            // trim the email value
+            var emailTrimmed = trim(email);
+
+            // email must have a value.  Stop!!!
+            if (emailTrimmed.length == 0) {
+                $(".alertPopupMessage").html('Email Address is blank. Please try again.');
+                return false;
+            }
+
+            // verify if email pattern is valid.
+            var regEx = new RegExp(emailPattern);
+            var bMatch = regEx.test(emailTrimmed);
+
+            // Email Address doesn't match the pattern. Invalid Email. Stop!!!
+            if (bMatch == false) {
+                $(".alertPopupMessage").html('Email address must be valid. Ex: name@domain.com');
+                return false;
+            }
+
+            // show the progress bar...
+            $('.userAlertPopupProgressBar').show();
+
+            // initiate the callback
+            callBackSaveAlert(emailTrimmed);
+        }
+
+        function test(o) { }
+        function downloadFile(filename) {
+            var url = filename;
+            window.location.href = url;
+        }
+
+        $(document).ready(function () {
+            if ($('.customvalidator').css('visibility') == 'hidden') {
+                $('.errorMessageSection').hide();
+                $('.customvalidator').css('visibility', 'hidden');
+            } else {
+                $('.errorMessageSection').show();
+                $('.customvalidator').css('visibility', 'visible');
+            }
+
+            $('.signInButton').each(function () {
+                $(this).click(function () {
+                    if ($('.customvalidator').css('visibility') == 'hidden') {
+                        $('.errorMessageSection').hide();
+                        $('.customvalidator').css('visibility', 'hidden');
+                    } else {
+                        $('.errorMessageSection').show();
+                        $('.customvalidator').css('visibility', 'visible');
+                    }
+                });
+            });
+
+            // adjust open access icon widh doi
+            if ($('#scm6MainContent_lblFreeArticle').length) {
+                $('.doi .clearfix').addClass('adjustopenAccess');
+            }
+
+        });
+
+
+        $(document).ready(function () {
+            // This part bellow is to display BrightCove Vedios
+            var feedLink = '';
+            var isUserLoggedIn = $get('hfUserHasSubscription').value;
+            if (isUserLoggedIn == "1") {
+                getBrightCoveID(feedLink);
+            }
+            var BrightCoveVedioID;
+            function getBrightCoveID(url) {
+                $('#dvVidPresents').hide();
+                $.ajax({
+                    type: "POST",
+                    url: "proceeding.aspx/getBrightCoveID",
+                    data: '{ "FeedURL": "' + url + '" }',
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        var data = (data.hasOwnProperty('d')) ? $.parseJSON(data.d) : data;
+                        BrightCoveVedioID = (data.hasOwnProperty('d')) ? data.d.items[0].id : data.items[0].id;
+                        var embed = {};
+                        embed.h = 505;
+                        embed.w = 600;
+                        embed.bg = "#ffffff";
+                        embed.playerid = "1094074693001";
+                        var BCVideo = '<object id="myExperience" class="BrightcoveExperience"><param name="bgcolor" value="' + embed.bg + '" /><param name="width" value="' + embed.w + '" /><param name="height" value="' + embed.h + '" /><param name="playerID" value="' + embed.playerid + '" /><param name="playerKey" value="AQ~~,AAAAoHrMRhk~,T5-k00gMv_uqr7ekZHfpqOsmv-JJJWhw" /><param name="isVid" value="true" /><param name="isUI" value="true" /><param name="dynamicStreaming" value="true" /><param name="@videoPlayer" value="' + BrightCoveVedioID + '" /></object>';
+                        $("#brightcoveVideoPlaceholder").append(BCVideo);
+                        brightcove.createExperiences();
+
+                        $('#dvVidPresents').show();
+
+                    }
+
+                });
+            }
+
+        });
+        $(document).ready(function () {
+            $('.pubdateHistory').show();
+        });
+
+        //******************USER ALERT RELATED FUNCTIONS******************
+
+        // *************** Start WT click events
+        $(document).ready(function () {
+
+            var locationInfo = window.location.hostname + window.location.pathname;
+            var authentication = $("meta[name='DCSext.auth']").attr('content');
+            var isMobile = $("meta[name='DCSext.mobilesite']").attr('content');
+
+            $(".prev").click(function () {
+                dcsMultiTrack('WT.es', locationInfo, 'WT.dl', '7', 'DCSext.buttonnav', 'Previous_Article_Button', 'DCSext.auth', authentication, 'DCSext.mobilesite', isMobile);
+            });
+
+            $(".next").click(function () {
+                dcsMultiTrack('WT.es', locationInfo, 'WT.dl', '7', 'DCSext.buttonnav', 'Next_Article_Button', 'DCSext.auth', authentication, 'DCSext.mobilesite', isMobile);
+            });
+
+            $(".tab1Div > a").click(function () {
+                dcsMultiTrack('WT.es', locationInfo, 'WT.dl', '7', 'DCSext.tabnav', 'Paper_Tab', 'DCSext.auth', authentication, 'DCSext.mobilesite', isMobile);
+            });
+
+            $(".tab5Div > a").click(function () {
+                dcsMultiTrack('WT.es', locationInfo, 'WT.dl', '7', 'DCSext.tabnav', 'References_Tab', 'DCSext.auth', authentication, 'DCSext.mobilesite', isMobile);
+            });
+
+            $(".proceedingPDF .content_pdf").click(function () {
+                dcsMultiTrack('WT.es', locationInfo, 'WT.dl', '7', 'WT.cg_n', 'MainDrillDown:Digital_Library;ProductTypeDrillDown;;Action;Success_Event', 'WT.cg_s', 'Main:Product_Details;Product:Proceedings;;Action:Download_PDF_Link;Success:PDF_Download', 'DCSext.auth', authentication, 'DCSext.mobilesite', isMobile);
+            });
+
+        });
+
+        // *************** End WT click events
+    </script>
+    <!--Right Portlet Column: Drag and Sort Portlets and Save the present state-->
+    <script type="text/javascript" src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/MathJax.js"></script>
+    <script type="text/javascript" src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/saved_resource(3)"></script>
+
+
+    <!-- START OF SmartSource Data Collector TAG -->
+    <!-- Copyright (c) 1996-2012 Webtrends Inc.  All rights reserved. -->
+    <!-- Version: 9.4.0 -->
+    <!-- Tag Builder Version: 3.3  -->
+    <!-- Created: 2/8/2012 9:51:24 PM -->
+    <script src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/webtrends.js" type="text/javascript"></script>
+    <!-- ----------------------------------------------------------------------------------- -->
+    <!-- Warning: The two script blocks below must remain inline. Moving them to an external -->
+    <!-- JavaScript include file can cause serious problems with cross-domain tracking.      -->
+    <!-- ----------------------------------------------------------------------------------- -->
+    <script type="text/javascript">
+    //<![CDATA[
+        var _tag = new WebTrends();
+        _tag.dcsGetId();
+    //]]>
+    </script><script type="text/javascript" src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/wtid.js"></script>
+    <script type="text/javascript">
+    //<![CDATA[
+        _tag.dcsCustom = function () {
+            // Add custom parameters here.
+            //_tag.DCSext.param_name=param_value;
+        }
+        _tag.dcsCollect();
+    //]]>
+    </script>
+    <noscript>
+    &lt;div&gt;&lt;img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="//datacoll.spie.org/dcsrefwbsblq1tcdick7hwcm6_7v5d/njs.gif?dcsuri=/nojavascript&amp;amp;WT.js=No&amp;amp;WT.tv=9.4.0&amp;amp;dcssip=www.spiedigitallibrary.org"/&gt;&lt;/div&gt;
+    </noscript>
+    <!-- END OF SmartSource Data Collector TAG -->
+    
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancy-bg" id="fancy-bg-n"></div><div class="fancy-bg" id="fancy-bg-ne"></div><div class="fancy-bg" id="fancy-bg-e"></div><div class="fancy-bg" id="fancy-bg-se"></div><div class="fancy-bg" id="fancy-bg-s"></div><div class="fancy-bg" id="fancy-bg-sw"></div><div class="fancy-bg" id="fancy-bg-w"></div><div class="fancy-bg" id="fancy-bg-nw"></div><div id="fancybox-inner"></div><a id="fancybox-close"></a><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-1" style="display: none; z-index: 9999; outline: 0px; position: absolute; height: auto; width: 300px;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-1">Get Citation&nbsp;</span><a href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=812508#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">X Close</span></a></div><div class="getCitationPopupDialog ui-dialog-content ui-widget-content" style="display: block; width: auto; min-height: 0px; height: 550px;">
+    <input type="hidden" name="ctl00$scm6MainContent$ucArticleToolbox$ucGetCitation$articleId" id="scm6MainContent_ucArticleToolbox_ucGetCitation_articleId" value="0">
+    <div class="logoBrand"></div>
+    <div id="scm6MainContent_ucArticleToolbox_ucGetCitation_citationCopyPaste" class="citationCopyPaste">
+        <textarea name="ctl00$scm6MainContent$ucArticleToolbox$ucGetCitation$txtCopyPaste" rows="6" cols="20" readonly="readonly" id="scm6MainContent_ucArticleToolbox_ucGetCitation_txtCopyPaste" class="copyPaste" style="border-width:0px;border-style:None;width:100%;"> Michael Zink ; Kyoungwon Suh ; Yu Gu ; Jim Kurose; Watch global, cache local: YouTube network traffic at a campus network: measurements and implications. Proc. SPIE 6818, Multimedia Computing and Networking 2008, 681805 (January&nbsp;28, 2008); doi:10.1117/12.774903.</textarea>
+    </div>
+    <div class="citationLinks">
+        <p>Download citation file: </p>
+        <div class="citationLink"><a href="http://proceedings.spiedigitallibrary.org/downloadCitation.aspx?format=ris" onclick="detailsHandler(this.href); return false;" target="_blank">RIS (Zotero)</a></div> 
+        <div class="citationLink"><a href="http://proceedings.spiedigitallibrary.org/downloadCitation.aspx?format=ris" onclick="detailsHandler(this.href); return false;" target="_blank">EndNote</a></div> 
+        <div class="citationLink"><a href="http://proceedings.spiedigitallibrary.org/downloadCitation.aspx?format=bib" onclick="detailsHandler(this.href); return false;" target="_blank">BibTex</a></div> 
+        <div class="citationLink"><a href="http://proceedings.spiedigitallibrary.org/downloadCitation.aspx?format=txt" onclick="detailsHandler(this.href); return false;" target="_blank">Medlars</a></div> 
+        <div class="citationLink"><a href="http://proceedings.spiedigitallibrary.org/downloadCitation.aspx?format=ris" onclick="detailsHandler(this.href); return false;" target="_blank">ProCite</a></div> 
+        <div class="citationLink"><a href="http://proceedings.spiedigitallibrary.org/downloadCitation.aspx?format=txt" onclick="detailsHandler(this.href); return false;" target="_blank">RefWorks</a></div> 
+        <div class="citationLink"><a href="http://proceedings.spiedigitallibrary.org/downloadCitation.aspx?format=ris" onclick="detailsHandler(this.href); return false;" target="_blank">Reference Manager</a></div> 
+    </div>
+    <div class="copyrightInfo">Copyright © SPIE Digital Library</div>
+</div><div class="ui-resizable-handle ui-resizable-n"></div><div class="ui-resizable-handle ui-resizable-e"></div><div class="ui-resizable-handle ui-resizable-s"></div><div class="ui-resizable-handle ui-resizable-w"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se" style="z-index: 1001;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1002;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1003;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1004;"></div></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-2" style="display: none; z-index: 9999; outline: 0px; height: auto; width: 750px;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-2"><a class="sendEmailButton" onclick="validateForm()">Send Email</a><a class="sendEmailButton" onclick="validateForm()">Send Email</a>&nbsp;</span><a href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=812508#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">X Close</span></a></div><div class="emailPopupDialog ui-dialog-content ui-widget-content" style="display: block; width: auto; min-height: 0px; height: 550px;">
+    <div class="logoBrand">SPIE</div>
+
+    <div id="scm6MainContent_ucArticleToolbox_ucSendEmail_upBody">
+	
+
+    
+
+    
+
+    
+
+    <div id="divErrorMessage">
+        <div class="sentMsg">
+            You must be logged in as an individual user to share content.
+        </div>
+        <div class="returnTo" style="display:none;">
+            Return to: <span style="font-weight:bold;">Watch global, cache local: YouTube network traffic at a campus network: measurements and implications</span>
+        </div>
+    </div>
+        
+        
+</div>
+
+    <div class="copyText">
+        Copyright in the material you requested is held by <span style="font-weight:bold;">SPIE</span> (unless otherwise noted). 
+        This email ability is provided as a courtesy, and by using it you agree that you are requesting the material 
+        solely for personal, non-commercial  use, and that it is subject to <span style="font-weight:bold;">SPIE's</span> <a href="http://proceedings.spiedigitallibrary.org/ss/termsofuse.aspx">Terms of Use</a>.
+        The information provided in order to email this topic will not be used to send unsolicited email, nor will it be
+        furnished to third parties. Please refer to <span style="font-weight:bold;">SPIE's</span>
+        <a href="http://proceedings.spiedigitallibrary.org/ss/privacypolicy.aspx">Privacy Policy</a> for further information.
+    </div>
+    <div class="copyrightInfo">SPIE © 1962-2014. All rights reserved.</div>
+    <!--<div class="companyLogo"><img src="../Images/backgrounds/logo_silverchair.gif" alt="" /></div>-->
+</div></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-signinDialog" style="display: none; z-index: 1000; outline: 0px; position: absolute;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-signinDialog">&nbsp;</span><a href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=812508#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">X Close</span></a></div><div id="signinDialog" class="ui-dialog-content ui-widget-content" style="display: block;">
+            <div id="globalSignIn11">
+                
+
+<div class="globalSignIn">
+
+    <div id="globalSignIn11_rightSignIn">
+        
+        <div id="globalSignIn11_PersonalAccountRegistration">
+            <div id="globalSignIn11_PersonalAccountRegistration1_personalAccount" class="personalAccount">
+
+    
+     <div class="signInDetails" style="margin-left: 0px;">
+           <strong>Buy this article</strong> ($18 for members, $25 for non-members).
+    </div>
+</div>
+
+
+        </div>
+    </div>
+    <div class="clearAll"></div>
+
+    
+    <div id="globalSignIn11_leftSignIn" class="signInBox left">
+    <input type="hidden" name="ctl00$globalSignIn11$hfcloseparent" id="globalSignIn11_hfcloseparent">
+    <input type="hidden" name="ctl00$globalSignIn11$hfReturnURL" id="globalSignIn11_hfReturnURL" value="/proceeding.aspx?articleid=812508">
+        <div class="loginInfo">
+            <div id="globalSignIn11_signInHeader" class="signInHeader">
+                <div id="globalSignIn11_signInHeader1">
+                    Sign In
+                </div>
+                
+            </div>
+            <div id="globalSignIn11_pnlSignIn" class="PnlLoginInfo" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;globalSignIn11_ibSignIn&#39;)">
+	
+            <!--validation summary control-->
+                <div class="errorMessageSection"> 
+                    <span id="globalSignIn11_lblErrorMessage" class="validationControl"></span>
+                    <span id="globalSignIn11_cvLogin" class="validationControl customvalidator" style="display: none; visibility: visible;">The username and/or password is blank. Please try again.</span>
+                </div>
+                <div class="field">
+                    <label for="txtEmail">Username</label>
+                    <input name="ctl00$globalSignIn11$txtEmail" type="text" maxlength="50" id="txtEmail" class="email">
+                </div>
+                <div class="field">
+                    <label for="txtPassword">Password</label>
+                    <input name="ctl00$globalSignIn11$txtPassword" type="password" maxlength="50" id="txtPassword" class="password">
+                </div>
+                <div class="buttonsContainer">
+                    <input type="submit" name="ctl00$globalSignIn11$ibSignIn" value="Sign In" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$globalSignIn11$ibSignIn&quot;, &quot;&quot;, true, &quot;globalSignIn11_vgLogin&quot;, &quot;https://proceedings.spiedigitallibrary.org/signin.aspx?articleid=812508&quot;, false, false))" id="globalSignIn11_ibSignIn" class="signInButton">
+                    <div id="globalSignIn11_forgotPasswordLink" class="forgotPasswordLink">
+                        
+                        <span> Forgot your password? <br>click <a href="https://spie.org/app/accountmanager/forgotpassword/forgotpassword.aspx">
+                            here</a> to reset it on our<br> main  site, spie.org</span>
+                    </div>
+                    <div class="clearAll"></div>
+                </div>
+                  
+            
+</div>
+            <div id="globalSignIn11_divCustomSignIn">
+                <div id="globalSignIn11_divSignInLink" class="signInLink">
+                    
+                    
+                    Sign in via: 
+                    <a href="http://proceedings.spiedigitallibrary.org/signinshibboleth.aspx">Shibboleth</a>&nbsp;
+                    <a class="whatisthis" id="qLoginServicesLink"><img src="./SPIE   Proceeding   Watch global, cache local  YouTube network traffic at a campus network  measurements and implications_files/b_question.png" alt=""></a>
+                    <div class="popupDialog" id="loginServicesDialog" style="display:none;">
+                        <p>
+                            
+                              <span class="bold">Shibboleth</span> is an access management service that provides single sign-on to protected resources. It replaces the multiple user names and passwords necessary to access subscription-based content with a single user name and password that can be entered once per session. It operates independently of a user's location or IP address. If your institution uses Shibboleth authentication, please contact your site administrator to receive your user name and password.
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+</div> 
+
+            </div>
+        </div><div class="ui-resizable-handle ui-resizable-n"></div><div class="ui-resizable-handle ui-resizable-e"></div><div class="ui-resizable-handle ui-resizable-s"></div><div class="ui-resizable-handle ui-resizable-w"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se" style="z-index: 1001;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1002;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1003;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1004;"></div></div></body></html>
